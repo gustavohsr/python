@@ -2,21 +2,22 @@ def computador_escolhe_jogada(n,m):
         n = n - m
         
         if (m == 0):
-            print("Computador tirou uma peça!")
-            print("Fim de jogo! O computador ganhou!")
+            print(" --> Computador tirou uma peça!")
+            print(" --> Fim de jogo! O computador ganhou!")
             n = 0
         elif (n == 0):
-             print("Computador tirou ",m," peça!")    
+             print(" --> Computador tirou ",m," peça!")    
              print("Fim de jogo! O computador ganhou!")
         else:
-            print("Agora restam ",n," peças no tabuleiro")       
+            print(" --> Computador tirou ",m," peças!")
+            print(" --> Agora restam ",n," peças no tabuleiro")       
     
         return n
 
 def usuario_escolhe_jogada(n,m):
         if (n != 0):
             resp = int(input("1 - Quantas peças você vai retirar? "))
-            while (resp >= n):
+            while (resp > n):
                 print ("Opss! Jogada invalida! Tente novamente!")
                 resp = int(input("Quantas peças você vai retirar? "))
             
@@ -34,8 +35,8 @@ def partida():
     escolha = int(input("Escolha: "))
 
     if escolha == 1:
-        n = int(input("Quantas peças? Informe o valor de n: "))
-        m = int(input("Limite de peças por jogada? Informe o valor de m: "))
+        n = int(input("Quantas peças?  "))
+        m = int(input("Limite de peças por jogada?  "))
 
         if n%(m+1) == 0:
             print("Você começa!")
@@ -59,8 +60,8 @@ def partida():
         while (i <= 3):
             print("**** Rodada ",i," ****")
             # ------
-            n = int(input("Quantas peças? Informe o valor de n: "))
-            m = int(input("Limite de peças por jogada? Informe o valor de m: "))
+            n = int(input("Quantas peças? "))
+            m = int(input("Limite de peças por jogada? "))
 
             if n%(m+1) == 0:
                 print("Você começa!")
@@ -80,7 +81,8 @@ def partida():
             i = i + 1
         print ("Final do Campeonato!")
     else:
-        print("Escolha 1 ou 2")
+        print("***** Escolha 1 ou 2 *****")
+        partida()
 
 
 partida()
