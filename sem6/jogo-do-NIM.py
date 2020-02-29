@@ -62,22 +62,22 @@ def partida():
             n = int(input("Quantas peças? Informe o valor de n: "))
             m = int(input("Limite de peças por jogada? Informe o valor de m: "))
 
-        if ((m+1)*2) >= n:
-            print("Você começa!")
-            resp_user = usuario_escolhe_jogada(n,m)
-            resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
-            while (resp_user > 1) or (resp_comp > 0):
-                resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
+            if ((m+1)*2) >= n:
+                print("Você começa!")
+                resp_user = usuario_escolhe_jogada(n,m)
                 resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
-        else:
-            print("Computador começa!")
-            resp_comp = computador_escolhe_jogada(n,m)
-            resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
-            while (resp_user > 1) or (resp_comp > 0):
-                resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
+                while (resp_user > 1) or (resp_comp > 0):
+                    resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
+                    resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
+            else:
+                print("Computador começa!")
+                resp_comp = computador_escolhe_jogada(n,m)
                 resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
+                while (resp_user > 1) or (resp_comp > 0):
+                    resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
+                    resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
             # ------
-        i = i + 1
+            i = i + 1
         print ("Final do Campeonato!")
     else:
         print("Escolha 1 ou 2")
