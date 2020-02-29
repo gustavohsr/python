@@ -37,7 +37,7 @@ def partida():
         n = int(input("Quantas peças? Informe o valor de n: "))
         m = int(input("Limite de peças por jogada? Informe o valor de m: "))
 
-        if ((m+1)*2) >= n:
+        if n%(m+1) == 0:
             print("Você começa!")
             resp_user = usuario_escolhe_jogada(n,m)
             resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
@@ -62,7 +62,7 @@ def partida():
             n = int(input("Quantas peças? Informe o valor de n: "))
             m = int(input("Limite de peças por jogada? Informe o valor de m: "))
 
-            if ((m+1)*2) >= n:
+            if n%(m+1) == 0:
                 print("Você começa!")
                 resp_user = usuario_escolhe_jogada(n,m)
                 resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
