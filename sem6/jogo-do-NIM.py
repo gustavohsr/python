@@ -16,7 +16,7 @@ def computador_escolhe_jogada(n,m):
 
 def usuario_escolhe_jogada(n,m):
         if (n != 0):
-            resp = int(input("1 - Quantas peças você vai retirar? "))
+            resp = int(input("Quantas peças você vai retirar? "))
             while (resp > n):
                 print ("Opss! Jogada invalida! Tente novamente!")
                 resp = int(input("Quantas peças você vai retirar? "))
