@@ -24,6 +24,9 @@ def usuario_escolhe_jogada(n,m):
             print ("Você retirou ", resp, "peças")
             n = n - resp
             print ("Agora restam ",n," peças no tabuleiro")
+
+            if n == 0:
+                print ("Você venceu!")
     
         return n
 
@@ -39,17 +42,18 @@ def partida():
         m = int(input("Limite de peças por jogada?  "))
 
         if n%(m+1) == 0:
-            print("Você começa!")
+            print("VOCÊ começa!")
             resp_user = usuario_escolhe_jogada(n,m)
             resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
-            while (resp_user > 1) or (resp_comp > 0):
+            while (resp_user > 1) or (resp_comp > 1):
                 resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
-                resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
+                if resp_user > 0:
+                    resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
         else:
             print("Computador começa!")
             resp_comp = computador_escolhe_jogada(n,m)
             resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
-            while (resp_user > 1) or (resp_comp > 0):
+            while (resp_user > 1) or (resp_comp > 1):
                 resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
                 resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
         print("Final")
@@ -67,14 +71,14 @@ def partida():
                 print("Você começa!")
                 resp_user = usuario_escolhe_jogada(n,m)
                 resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
-                while (resp_user > 1) or (resp_comp > 0):
+                while (resp_user > 1) or (resp_comp > 1):
                     resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
                     resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
             else:
                 print("Computador começa!")
                 resp_comp = computador_escolhe_jogada(n,m)
                 resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
-                while (resp_user > 1) or (resp_comp > 0):
+                while (resp_user > 1) or (resp_comp > 1):
                     resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
                     resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
             # ------
