@@ -44,18 +44,23 @@ def partida():
         if n%(m+1) == 0:
             print("VOCÊ começa!")
             resp_user = usuario_escolhe_jogada(n,m)
-            resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
-            while (resp_user > 1) or (resp_comp > 1):
-                resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
-                if resp_user > 0:
-                    resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
+            resp_comp = computador_escolhe_jogada(resp_user,resp_user)
+
+            if resp_comp != 0:
+                while (resp_user > 1) or (resp_comp > 1):
+                    resp_user = usuario_escolhe_jogada(resp_comp,resp_comp)
+                    if resp_user > 0:
+                        resp_comp = computador_escolhe_jogada(resp_user,resp_user)
         else:
             print("Computador começa!")
             resp_comp = computador_escolhe_jogada(n,m)
-            resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
-            while (resp_user > 1) or (resp_comp > 1):
-                resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
-                resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
+            resp_user = usuario_escolhe_jogada(resp_comp,resp_comp)
+            
+            if resp_user != 0:
+                while (resp_user > 1) or (resp_comp > 1):
+                    resp_comp = computador_escolhe_jogada(resp_user,resp_user)
+                    if resp_comp > 0:
+                        resp_user = usuario_escolhe_jogada(resp_comp,resp_comp)
         print("Final")
     
     elif escolha == 2:
