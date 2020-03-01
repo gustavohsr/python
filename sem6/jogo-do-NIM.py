@@ -81,17 +81,17 @@ def partida():
 
                 if resp_comp == 0:
                     placar_comp = placar_comp + 1
-
-                while (resp_user > 1) or (resp_comp > 1):
-                    resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
+                else:    
+                    while (resp_user > 1) or (resp_comp > 1):
+                        resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
                     
-                    if resp_user == 0:
-                        placar_user = placar_user + 1
-                    else:
-                        resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
+                        if resp_user == 0:
+                            placar_user = placar_user + 1
+                        else:
+                            resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
                     
-                    if resp_comp == 0:
-                        placar_comp = placar_comp + 1
+                        if resp_comp == 0:
+                            placar_comp = placar_comp + 1
             else:
                 print("Computador começa!")
                 resp_comp = computador_escolhe_jogada(n,m)
@@ -99,14 +99,15 @@ def partida():
 
                 if resp_user == 0:
                     placar_user = placar_user + 1
+                else:
+                    while (resp_user > 1) or (resp_comp > 1):
+                        resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
 
-                while (resp_user > 1) or (resp_comp > 1):
-                    resp_comp = computador_escolhe_jogada(resp_user,resp_user-1)
-
-                    if resp_comp == 0:
-                        placar_comp = placar_comp + 1
-                    else:
-                        resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
+                        if resp_comp == 0:
+                            placar_comp = placar_comp + 1
+                        else:
+                            resp_user = usuario_escolhe_jogada(resp_comp,resp_comp-1)
+                        
                         if resp_user == 0:
                             placar_user = placar_user + 1
             # ------
@@ -116,6 +117,5 @@ def partida():
     else:
         print("***** Escolha 1 ou 2 *****")
         partida()
-
 
 partida()
