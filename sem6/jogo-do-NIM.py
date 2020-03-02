@@ -3,8 +3,6 @@ def computador_escolhe_jogada(n,m):
     #em deixar sempre um número de peças que seja múltiplo de (m+1) ao jogador. 
     #Caso isso não seja possível, deverá tirar o número máximo de peças possíveis.   
     #retirando pelo menos 1 e no máximo m peças cada um.
-    # n = 6 
-    # m = 2
 
     if n > m:
        i = 1
@@ -157,13 +155,3 @@ def partida():
         print("***** Escolha 1 ou 2 *****")
         partida()
 partida()
-#usuario_escolhe_jogada(0,2)
-#usuario_escolhe_jogada(-1,3)
-#resp = computador_escolhe_jogada(3,1)
-#print(resp)
-#resp = computador_escolhe_jogada(14,4)
-#print(resp)
-#resp = computador_escolhe_jogada(13,4)
-#print(resp)
-#resp = computador_escolhe_jogada(6,2)
-#print(resp)
