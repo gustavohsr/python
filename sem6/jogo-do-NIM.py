@@ -3,37 +3,34 @@ def computador_escolhe_jogada(n,m):
     #em deixar sempre um número de peças que seja múltiplo de (m+1) ao jogador. 
     #Caso isso não seja possível, deverá tirar o número máximo de peças possíveis.   
     #retirando pelo menos 1 e no máximo m peças cada um.
+    # n = 4 
+    # m = 1
 
     if n > m:
        i = 1
-       n = n - i
-       if n == 0:
-                return n+1
-       else:
-           while(i <= m):
-                if n%(m+1) == 0:
-                    return i
-                    i = m
-                else:
-                    i = i + 1
-                    n = n - i
+       while(i <= m):
+            if (n)%(m+1) == 0:
                 return i
-    else:
-        return n
+            else:
+                i = i + 1
+                n = n - 1
+            return i
+    return n
 
 def usuario_escolhe_jogada(n,m):
-    while (n <= m) or (m <= 0):
-            print("Valores inválidos!")
-            return 0
+    
+    if n <= 0 or m <= 0:
+        print ("Valores inválidos!")
+        return -1
     else: 
         if (n >= m):
             resp = int(input("Quantas peças você vai retirar? "))
-            while (resp > m):
+            while (resp > m) or (resp < 1):
                 print ("Opss! Jogada invalida! Tente novamente!")
                 resp = int(input("Quantas peças você vai retirar? "))
         else:
             resp = int(input("Quantas peças você vai retirar? "))
-            while (resp > n):
+            while (resp > n) or (resp < 1):
                 print ("Opss! Jogada invalida! Tente novamente!")
                 resp = int(input("Quantas peças você vai retirar? "))           
         return resp
@@ -49,7 +46,7 @@ def partida():
         n = int(input("Quantas peças?  "))
         m = int(input("Limite de peças por jogada?  "))
 
-        while (n <= m) or (m <= 0):
+        while (n <= 0) or (m <= 0):
             print("Valores inválidos!")
             n = int(input("Quantas peças?  "))
             m = int(input("Limite de peças por jogada?  "))
@@ -58,10 +55,14 @@ def partida():
                 print("VOCÊ começa!")
                 while (n != 0):
                     resp_user = usuario_escolhe_jogada(n,m)
-                    print ("Você retirou ", resp_user, "peça(s)")
-                    n = n - resp_user
-                    print ("Agora restam ",n," peças no tabuleiro!")
-                    
+                    if resp_user == -1:
+                        print("Jogada inválida")
+                        resp_user = usuario_escolhe_jogada(n,m)
+                    else:
+                        print ("Você retirou ", resp_user, "peça(s)")
+                        n = n - resp_user
+                        print ("Agora restam ",n," peças no tabuleiro!")
+                        
                     if n == 0:
                         print ("Você venceu!")
                     else:            
@@ -78,6 +79,7 @@ def partida():
                     print(" --> Computador tirou ",resp_comp," peças!")
                     n = n - resp_comp
                     print(" --> Agora restam ",n," peças no tabuleiro")
+                    
                     if n == 0:
                         print("Fim de jogo! O computador ganhou!")
                     else:
@@ -98,7 +100,7 @@ def partida():
             n = int(input("Quantas peças? "))
             m = int(input("Limite de peças por jogada? "))
 
-            while (n <= m) or (m <= 0):
+            while (n <= 0) or (m <= 0):
                 print("Valores inválidos!")
                 n = int(input("Quantas peças?  "))
                 m = int(input("Limite de peças por jogada?  "))
@@ -107,9 +109,13 @@ def partida():
                     print("VOCÊ começa!")
                     while (n != 0):
                         resp_user = usuario_escolhe_jogada(n,m)
-                        print ("Você retirou ", resp_user, "peça(s)")
-                        n = n - resp_user
-                        print ("Agora restam ",n," peças no tabuleiro!")
+                        if resp_user == -1:
+                            print("Jogada inválida")
+                            resp_user = usuario_escolhe_jogada(n,m)
+                        else:
+                            print ("Você retirou ", resp_user, "peça(s)")
+                            n = n - resp_user
+                            print ("Agora restam ",n," peças no tabuleiro!")
                         
                         if n == 0:
                             print ("Você venceu!")
@@ -121,7 +127,7 @@ def partida():
                             print(" --> Agora restam ",n," peças no tabuleiro")
                             if n == 0:
                                 print("Fim de jogo! O computador ganhou!")
-                                placar_comp = placar_comp + 1                 
+                                placar_comp = placar_comp + 1    
                 else:
                     print("Computador começa!")
                     while (n != 0):
@@ -149,3 +155,5 @@ def partida():
         print("***** Escolha 1 ou 2 *****")
         partida()
 partida()
+#usuario_escolhe_jogada(0,2)
+#usuario_escolhe_jogada(-1,3)
