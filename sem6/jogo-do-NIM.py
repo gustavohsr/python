@@ -17,10 +17,15 @@ def computador_escolhe_jogada(n,m):
                 else:
                     i = i + 1
                     n = n - i
+                return i
     else:
         return n
 
 def usuario_escolhe_jogada(n,m):
+    while (n <= m) or (m <= 0):
+            print("Valores inválidos!")
+            return 0
+    else: 
         if (n >= m):
             resp = int(input("Quantas peças você vai retirar? "))
             while (resp > m):
@@ -44,7 +49,7 @@ def partida():
         n = int(input("Quantas peças?  "))
         m = int(input("Limite de peças por jogada?  "))
 
-        while n <= m:
+        while (n <= m) or (m <= 0):
             print("Valores inválidos!")
             n = int(input("Quantas peças?  "))
             m = int(input("Limite de peças por jogada?  "))
@@ -93,7 +98,7 @@ def partida():
             n = int(input("Quantas peças? "))
             m = int(input("Limite de peças por jogada? "))
 
-            while n <= m:
+            while (n <= m) or (m <= 0):
                 print("Valores inválidos!")
                 n = int(input("Quantas peças?  "))
                 m = int(input("Limite de peças por jogada?  "))
