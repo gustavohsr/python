@@ -1,0 +1,875 @@
+top - 15:32:14 up  6:11,  1 user,  load average: 1,76, 1,83, 1,95
+Tasks: 284 total,   3 running, 200 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4,1 us,  0,9 sy,  0,0 ni, 93,1 id,  1,9 wa,  0,0 hi,  0,0 si,  0,0 st
+KiB Mem :  3960652 total,  1050024 free,  2352328 used,   558300 buff/cache
+KiB Swap:  2098172 total,  1677564 free,   420608 used.  1146120 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+19797 gustavo   20   0 9567684 428592  98548 R  63,6 10,8  13:31.50 chrome
+19457 gustavo   20   0  826436 156832  73920 S  13,6  4,0   5:38.37 chrome
+ 1301 root      20   0  526696  24468   6384 S   9,1  0,6   9:08.34 Xorg
+ 2011 gustavo   20   0 1551816  53280   7464 R   9,1  1,3   6:35.22 gala
+22126 gustavo   20   0 4845896  91676  56752 S   9,1  2,3   0:27.41 chrome
+ 1951 gustavo    9 -11 1975404   6768   4796 S   4,5  0,2   1:31.16 pulseaudio
+20858 gustavo   20   0  698704  24068  11028 S   4,5  0,6   0:04.85 io.elementary.t
+22437 gustavo   20   0   69824   3844   3252 R   4,5  0,1   0:00.03 top
+    1 root      20   0  225520   3404   1896 S   0,0  0,1   0:02.07 systemd
+    2 root      20   0       0      0      0 S   0,0  0,0   0:00.03 kthreadd
+    3 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 rcu_gp
+    4 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 rcu_par_gp
+    9 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 mm_percpu_wq
+   10 root      20   0       0      0      0 S   0,0  0,0   0:00.20 ksoftirqd/0
+   11 root      20   0       0      0      0 I   0,0  0,0   0:18.75 rcu_sched
+   12 root      rt   0       0      0      0 S   0,0  0,0   0:00.10 migration/0
+   13 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/0
+   14 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/0
+   15 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/1
+   16 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/1
+   17 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/1
+   18 root      20   0       0      0      0 S   0,0  0,0   0:00.16 ksoftirqd/1
+   21 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/2
+   22 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/2
+   23 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/2
+   24 root      20   0       0      0      0 S   0,0  0,0   0:00.07 ksoftirqd/2
+   27 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/3
+   28 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/3
+   29 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/3
+   30 root      20   0       0      0      0 S   0,0  0,0   0:00.04 ksoftirqd/3
+   32 root       0 -20       0      0      0 I   0,0  0,0   0:05.55 kworker/3:0H-ra
+   33 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/4
+   34 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/4
+   35 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/4
+   36 root      20   0       0      0      0 S   0,0  0,0   0:00.06 ksoftirqd/4
+   39 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/5
+   40 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/5
+   41 root      rt   0       0      0      0 S   0,0  0,0   0:00.10 migration/5
+   42 root      20   0       0      0      0 S   0,0  0,0   0:00.02 ksoftirqd/5
+   45 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/6
+   46 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/6
+   47 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/6
+   48 root      20   0       0      0      0 S   0,0  0,0   0:00.04 ksoftirqd/6
+   50 root       0 -20       0      0      0 I   0,0  0,0   0:01.48 kworker/6:0H-ra
+   51 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/7
+   52 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/7
+   53 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/7
+   54 root      20   0       0      0      0 S   0,0  0,0   0:00.12 ksoftirqd/7
+   57 root      20   0       0      0      0 S   0,0  0,0   0:00.00 kdevtmpfs
+   58 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 netns
+   59 root      20   0       0      0      0 S   0,0  0,0   0:00.00 rcu_tasks_kthre
+   60 root      20   0       0      0      0 S   0,0  0,0   0:00.01 kauditd
+   63 root      20   0       0      0      0 S   0,0  0,0   0:00.02 khungtaskd
+   64 root      20   0       0      0      0 S   0,0  0,0   0:00.00 oom_reaper
+   65 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 writeback
+   66 root      20   0       0      0      0 S   0,0  0,0   0:00.91 kcompactd0
+   67 root      25   5       0      0      0 S   0,0  0,0   0:00.00 ksmd
+   68 root      39  19       0      0      0 S   0,0  0,0   0:00.00 khugepaged
+  161 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kintegrityd
+  162 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kblockd
+  163 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 blkcg_punt_bio
+  168 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 tpm_dev_wq
+  169 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ata_sff
+  170 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 md
+  171 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 edac-poller
+  172 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 devfreq_wq
+  174 root      rt   0       0      0      0 S   0,0  0,0   0:00.00 watchdogd
+  177 root      20   0       0      0      0 S   0,0  0,0   0:08.41 kswapd0
+  178 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/u17:0
+  179 root      20   0       0      0      0 S   0,0  0,0   0:00.00 ecryptfs-kthrea
+  182 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kthrotld
+  183 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 irq/27-pciehp
+  184 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 acpi_thermal_pm
+  186 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ipv6_addrconf
+  197 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kstrp
+  217 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 charger_manager
+  277 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 firewire
+  279 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 firewire_ohci
+  280 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 sdhci
+  281 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 irq/18-mmc0
+  283 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ttm_swap
+  284 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_0
+  285 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_0
+  286 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_1
+  287 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_1
+  288 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_2
+  289 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_2
+  290 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_3
+  291 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_3
+  292 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_4
+  293 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_4
+  294 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_5
+  295 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_5
+  300 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 e1000e
+  531 root      20   0       0      0      0 S   0,0  0,0   0:00.17 jbd2/sda4-8
+  532 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ext4-rsv-conver
+  570 root       0 -20       0      0      0 I   0,0  0,0   0:00.97 kworker/5:1H-ra
+  574 root      19  -1   95112   2652   2192 S   0,0  0,1   0:00.90 systemd-journal
+  605 root      20   0   97704      0      0 S   0,0  0,0   0:00.00 lvmetad
+  608 root      20   0   47912    552    148 S   0,0  0,0   0:00.97 systemd-udevd
+  654 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 cfg80211
+  657 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 irq/34-mei_me
+  785 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 irq/35-iwlwifi
+  835 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 cryptd
+  954 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop0
+  958 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop1
+  960 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop2
+  962 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop3
+  967 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop4
+  973 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop5
+  974 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop6
+  975 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop7
+  976 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop8
+  977 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop9
+  978 root       0 -20       0      0      0 S   0,0  0,0   0:00.04 loop10
+  979 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop11
+  980 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop12
+  981 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop13
+  982 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop14
+ 1051 root      20   0   40620    672    180 S   0,0  0,0   0:21.35 mount.ntfs
+ 1056 root      20   0       0      0      0 S   0,0  0,0   0:03.48 jbd2/sda6-8
+ 1057 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ext4-rsv-conver
+ 1165 systemd+  20   0  143992     28      0 S   0,0  0,0   0:00.06 systemd-timesyn
+ 1166 systemd+  20   0   71156   1272    668 S   0,0  0,0   0:01.86 systemd-resolve
+ 1170 avahi     20   0   48772   2428   1220 S   0,0  0,1   0:17.12 avahi-daemon
+ 1171 root      20   0   56936    100      0 S   0,0  0,0   0:00.03 cron
+ 1173 root      20   0  127544   1188    328 S   0,0  0,0   0:03.37 cupsd
+ 1175 root      20   0  434324      0      0 S   0,0  0,0   0:00.06 ModemManager
+ 1176 root      20   0  196100    320    320 S   0,0  0,0   0:00.06 networkd-dispat
+ 1177 root      20   0   70776    632    272 S   0,0  0,0   0:00.66 systemd-logind
+ 1178 root      20   0    4548      0      0 S   0,0  0,0   0:00.74 acpid
+ 1182 root      20   0  110484    376    260 S   0,0  0,0   0:01.60 irqbalance
+ 1185 syslog    20   0  263032      0      0 S   0,0  0,0   0:00.19 rsyslogd
+ 1187 message+  20   0   51696   2796   1064 S   0,0  0,1   0:29.96 dbus-daemon
+ 1191 root      20   0  525288   1688      0 S   0,0  0,0   0:01.33 NetworkManager
+ 1192 root      20   0   45228     64      0 S   0,0  0,0   0:00.13 wpa_supplicant
+ 1193 root      20   0  310564    772    220 S   0,0  0,0   0:00.14 pantheon-parent
+ 1195 root      20   0  327084    120      0 S   0,0  0,0   0:00.59 accounts-daemon
+ 1196 root      20   0  205508    272      0 S   0,0  0,0   0:01.82 thermald
+ 1197 root      20   0  518140   1748    292 S   0,0  0,0   0:02.27 udisksd
+ 1199 root      20   0 1523216   4584      0 S   0,0  0,1   0:04.28 snapd
+ 1220 avahi     20   0   47072     40      0 S   0,0  0,0   0:00.00 avahi-daemon
+ 1221 root      20   0  306048   2024   1256 S   0,0  0,1   0:25.66 cups-browsed
+ 1231 root      20   0  339940   3236   1108 S   0,0  0,1   0:03.45 polkitd
+ 1252 colord    20   0  358244   2608    940 S   0,0  0,1   0:00.35 colord
+ 1267 lp        20   0   86416     24     24 S   0,0  0,0   0:00.00 dbus
+ 1287 root      20   0  308904    692    316 S   0,0  0,0   0:00.07 lightdm
+ 1310 root      20   0 1299220  10652      0 S   0,0  0,3   0:14.30 core
+ 1318 root      20   0   41796      0      0 S   0,0  0,0   0:00.00 agetty
+ 1419 kernoops  20   0   56940    104      0 S   0,0  0,0   0:00.86 kerneloops
+ 1422 kernoops  20   0   56940     96      0 S   0,0  0,0   0:00.86 kerneloops
+ 1433 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 iprt-VBoxWQueue
+ 1438 root      20   0       0      0      0 S   0,0  0,0   0:00.00 iprt-VBoxTscThr
+ 1591 root      20   0  340968    972      0 S   0,0  0,0   0:01.05 upowerd
+ 1650 root      20   0  250548    308    308 S   0,0  0,0   0:00.01 lightdm
+ 1659 rtkit     21   1  183504     84      0 S   0,0  0,0   0:00.38 rtkit-daemon
+ 1679 root       0 -20       0      0      0 I   0,0  0,0   0:00.93 kworker/7:2H-ra
+ 1682 gustavo   20   0   77148   1364    648 S   0,0  0,0   0:00.16 systemd
+ 1683 gustavo   20   0  261592    444      0 S   0,0  0,0   0:00.00 (sd-pam)
+ 1702 gustavo   20   0  307004    780      0 S   0,0  0,0   0:00.26 gnome-keyring-d
+ 1705 gustavo   20   0  596712   1220      0 S   0,0  0,0   0:00.52 gnome-session-b
+ 1714 gustavo   20   0   51184   1908    468 S   0,0  0,0   0:01.90 dbus-daemon
+ 1716 gustavo   20   0  310572    564      0 S   0,0  0,0   0:00.13 gvfsd
+ 1721 gustavo   20   0  432020    312     28 S   0,0  0,0   0:00.01 gvfsd-fuse
+ 1825 gustavo   20   0   11300     40      0 S   0,0  0,0   0:00.10 ssh-agent
+ 1839 gustavo   20   0  367980    332    332 S   0,0  0,0   0:00.01 at-spi-bus-laun
+ 1844 gustavo   20   0   50832   1672    540 S   0,0  0,0   0:06.65 dbus-daemon
+ 1846 gustavo   20   0  220708   1560   1152 S   0,0  0,0   0:03.96 at-spi2-registr
+ 1857 gustavo   20   0  552132   1676      0 S   0,0  0,0   0:00.25 gsd-xsettings
+ 1858 gustavo   20   0  441724    480      0 S   0,0  0,0   0:00.09 gsd-rfkill
+ 1862 gustavo   20   0  315144    420      0 S   0,0  0,0   0:00.07 gsd-a11y-settin
+ 1864 gustavo   20   0  403216   2536      0 S   0,0  0,1   0:00.22 gsd-clipboard
+ 1867 gustavo   20   0  487924   2632      0 S   0,0  0,1   0:00.24 gsd-wacom
+ 1870 gustavo   20   0  566100   3416   1468 S   0,0  0,1   0:00.56 gsd-power
+ 1871 gustavo   20   0  361600    420      0 S   0,0  0,0   0:00.07 gsd-sound
+ 1872 gustavo   20   0  734652   4188   1808 S   0,0  0,1   0:03.00 gsd-color
+ 1878 gustavo   20   0 1007728   1688    600 S   0,0  0,0   0:01.78 gsd-housekeepin
+ 1885 gustavo   20   0  989316   4624   1604 S   0,0  0,1   0:00.44 gsd-media-keys
+ 1887 gustavo   20   0  367856    592      0 S   0,0  0,0   0:00.09 gsd-print-notif
+ 1892 gustavo   20   0  555384   2764     84 S   0,0  0,1   0:00.24 gsd-keyboard
+ 1907 gustavo   20   0  500164    672     76 S   0,0  0,0   0:00.23 gsd-datetime
+ 1908 gustavo   20   0  489828    708      0 S   0,0  0,0   0:00.11 gsd-sharing
+ 1918 gustavo   20   0  315152    404      0 S   0,0  0,0   0:00.08 gsd-mouse
+ 1923 gustavo   20   0  411220    384      0 S   0,0  0,0   0:00.08 gsd-smartcard
+ 1985 gustavo   20   0 1223968   3804      0 S   0,0  0,1   1:07.01 core
+ 2004 gustavo   20   0  527280    440      0 S   0,0  0,0   0:00.02 gsd-printer
+ 2020 gustavo   20   0   62644   3944    732 S   0,0  0,1   0:04.92 wsatspi
+ 2038 gustavo   20   0  188036   1040    380 S   0,0  0,0   0:00.62 dconf-service
+ 2041 gustavo   20   0  285376    392      0 S   0,0  0,0   0:00.08 io.elementary.c
+ 2045 gustavo   20   0  621996    892      0 S   0,0  0,0   0:00.11 gala-daemon
+ 2047 gustavo   20   0 3655976  36332   8296 S   0,0  0,9   0:06.91 wingpanel
+ 2048 gustavo   20   0  704428  13868   7280 S   0,0  0,4   0:07.42 plank
+ 2062 gustavo   20   0  548512    824      0 S   0,0  0,0   0:00.12 pantheon-agent-
+ 2063 gustavo   20   0  524036   2012    416 S   0,0  0,1   0:00.26 io.elementary.d
+ 2066 gustavo   20   0  721012   2284   1008 S   0,0  0,1   0:00.24 nm-applet
+ 2071 gustavo   20   0  480840   2692   1048 S   0,0  0,1   0:00.67 light-locker
+ 2073 gustavo   20   0  960576     24     24 S   0,0  0,0   0:00.15 io.elementary.c
+ 2075 gustavo   20   0  407628    832      0 S   0,0  0,0   0:00.12 pantheon-parent
+ 2106 gustavo   20   0  498628   8020   3256 S   0,0  0,2   0:03.51 bamfdaemon
+ 2294 gustavo   20   0 1392880    348    348 S   0,0  0,0   0:00.10 evolution-sourc
+ 2328 gustavo   20   0  912832    348    348 S   0,0  0,0   0:00.30 evolution-calen
+ 2335 gustavo   20   0 1087428    104    104 S   0,0  0,0   0:00.28 evolution-calen
+ 2344 gustavo   20   0  753352    296    296 S   0,0  0,0   0:00.05 evolution-addre
+ 2355 gustavo   20   0 1042472      0      0 S   0,0  0,0   0:00.07 evolution-addre
+ 2439 root       0 -20       0      0      0 I   0,0  0,0   0:01.00 kworker/5:2H-ra
+ 3334 gustavo   20   0 1349412   3660   1316 S   0,0  0,1   0:03.40 io.elementary.a
+ 5356 gustavo   20   0  402648    936      0 S   0,0  0,0   0:00.13 gvfsd-trash
+ 6548 root       0 -20       0      0      0 I   0,0  0,0   0:00.82 kworker/7:1H-ra
+ 6842 root       0 -20       0      0      0 I   0,0  0,0   0:01.17 kworker/2:3H-ra
+ 8245 gustavo   20   0  495200   1760    976 S   0,0  0,0   0:00.23 io.elementary.f
+ 8251 gustavo   20   0  338700   1848    368 S   0,0  0,0   0:00.58 gvfs-udisks2-vo
+ 8255 gustavo   20   0  292552    304      0 S   0,0  0,0   0:00.02 gvfs-goa-volume
+ 8259 gustavo   20   0  397332    424      0 S   0,0  0,0   0:00.03 gvfs-afc-volume
+ 8264 gustavo   20   0  307308    460      0 S   0,0  0,0   0:00.04 gvfs-gphoto2-vo
+ 8272 gustavo   20   0  312940   1812   1124 S   0,0  0,0   0:00.06 gvfs-mtp-volume
+ 8300 gustavo   20   0  464368   1608    440 S   0,0  0,0   0:00.36 zeitgeist-daemo
+ 8311 gustavo   20   0  331056   1868     96 S   0,0  0,0   0:00.40 zeitgeist-fts
+ 8314 gustavo   20   0  223148   1212    600 S   0,0  0,0   0:00.18 gvfsd-metadata
+ 9072 root       0 -20       0      0      0 I   0,0  0,0   0:04.69 kworker/3:2H-ra
+ 9492 gustavo   20   0  476564    968     88 S   0,0  0,0   0:00.06 gvfsd-network
+ 9557 gustavo   20   0  399804    388      0 S   0,0  0,0   0:00.55 gvfsd-dnssd
+12653 root       0 -20       0      0      0 I   0,0  0,0   0:00.92 kworker/4:1H-ra
+12732 root       0 -20       0      0      0 I   0,0  0,0   0:00.97 kworker/4:3H-ra
+14804 root      20   0       0      0      0 I   0,0  0,0   0:00.09 kworker/6:1-eve
+15718 root       0 -20       0      0      0 I   0,0  0,0   0:00.95 kworker/1:2H-ra
+15722 root      20   0       0      0      0 I   0,0  0,0   0:00.02 kworker/1:6-eve
+16661 root      20   0       0      0      0 I   0,0  0,0   0:00.10 kworker/5:2-eve
+17360 root      20   0       0      0      0 I   0,0  0,0   0:00.00 kworker/3:1-eve
+18652 gustavo   20   0 1937244  23372   9424 S   0,0  0,6   0:13.83 io.elementary.f
+18898 root       0 -20       0      0      0 I   0,0  0,0   0:00.45 kworker/2:0H-ra
+18995 root       0 -20       0      0      0 I   0,0  0,0   0:00.46 kworker/6:2H-kb
+19424 gustavo   20   0 1173308 239636  64280 S   0,0  6,1   2:56.22 chrome
+19431 gustavo   20   0   33224     64      0 S   0,0  0,0   0:00.00 cat
+19432 gustavo   20   0   33224     64      0 S   0,0  0,0   0:00.00 cat
+19435 gustavo   20   0  473568  15460   4440 S   0,0  0,4   0:00.16 chrome
+19436 gustavo   20   0   27220   1000    436 S   0,0  0,0   0:00.00 nacl_helper
+19439 gustavo   20   0  473568  13616   2588 S   0,0  0,3   0:00.14 chrome
+19463 gustavo   20   0  658336  66952  19164 S   0,0  1,7   0:47.97 chrome
+19526 gustavo   20   0 4875100 105728  45304 S   0,0  2,7   0:06.88 chrome
+19594 gustavo   20   0 4818192  38992  21732 S   0,0  1,0   0:00.27 chrome
+19611 gustavo   20   0 4882064  99788  40540 S   0,0  2,5   0:19.57 chrome
+19612 gustavo   20   0 4823528  54524  30080 S   0,0  1,4   0:01.55 chrome
+19623 gustavo   20   0 4858300  89772  33908 S   0,0  2,3   0:06.27 chrome
+19631 gustavo   20   0 4829464  56168  28904 S   0,0  1,4   0:02.11 chrome
+19743 gustavo   20   0 4869100  75044  26744 S   0,0  1,9   0:06.11 chrome
+19820 gustavo   20   0 1044080  18720   8204 S   0,0  0,5   0:15.35 chrome
+20338 root      20   0       0      0      0 I   0,0  0,0   0:00.13 kworker/0:0-eve
+20413 root      20   0       0      0      0 I   0,0  0,0   0:00.02 kworker/2:0-eve
+20534 root      20   0       0      0      0 I   0,0  0,0   0:00.07 kworker/1:0-mm_
+20682 gustavo   20   0 4819532  36216  18772 S   0,0  0,9   0:00.22 chrome
+20695 gustavo   20   0 9239944 241548  56044 S   0,0  6,1   0:33.04 chrome
+20720 root      20   0       0      0      0 I   0,0  0,0   0:00.05 kworker/7:0-eve
+20866 gustavo   20   0   48272   3416   1760 S   0,0  0,1   0:00.07 bash
+20878 gustavo   20   0   48284   2056    428 S   0,0  0,1   0:00.01 bash
+20919 gustavo   20   0 1214504  20896   2044 S   0,0  0,5   0:07.21 remmina
+21024 root      20   0       0      0      0 I   0,0  0,0   0:00.00 kworker/0:2
+21204 root       0 -20       0      0      0 I   0,0  0,0   0:00.22 kworker/1:1H-kb
+21232 root      20   0       0      0      0 I   0,0  0,0   0:00.32 kworker/u16:2-e
+21291 gustavo   20   0 82,447g 729792  91860 S   0,0 18,4   6:39.72 chrome
+21411 root      20   0       0      0      0 I   0,0  0,0   0:00.05 kworker/6:0-mm_
+21510 root      20   0       0      0      0 I   0,0  0,0   0:00.13 kworker/u16:3-e
+21653 gustavo   20   0 9185884 197820  72780 S   0,0  5,0   0:58.85 chrome
+21689 root      20   0       0      0      0 I   0,0  0,0   0:00.03 kworker/7:3-mm_
+21697 root      20   0       0      0      0 I   0,0  0,0   0:00.03 kworker/2:1-eve
+21770 root      20   0       0      0      0 I   0,0  0,0   0:02.28 kworker/4:1-mm_
+21870 root      20   0       0      0      0 I   0,0  0,0   0:00.06 kworker/u16:1-e
+21962 root      20   0       0      0      0 I   0,0  0,0   0:00.01 kworker/5:1-eve
+21985 root       0 -20       0      0      0 D   0,0  0,0   0:00.05 kworker/0:2H+ra
+22024 root      20   0       0      0      0 I   0,0  0,0   0:00.01 kworker/3:2-mm_
+22026 root      20   0       0      0      0 I   0,0  0,0   0:00.00 kworker/3:3-eve
+22057 root       0 -20       0      0      0 I   0,0  0,0   0:00.01 kworker/6:1H-ra
+22071 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/3:3H-kb
+22073 root       0 -20       0      0      0 D   0,0  0,0   0:00.05 kworker/0:3H+ra
+22110 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/1:3H-kb
+22119 root      20   0       0      0      0 I   0,0  0,0   0:00.00 kworker/4:2
+22124 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/5:0H
+22125 gustavo   20   0 4803344  45844  31140 S   0,0  1,2   0:00.04 chrome
+22215 root      20   0       0      0      0 I   0,0  0,0   0:00.01 kworker/2:2-mm_
+22277 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/4:0H
+22346 root      20   0       0      0      0 I   0,0  0,0   0:00.01 kworker/u16:0-e
+22376 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/2:1H
+22379 root       0 -20       0      0      0 I   0,0  0,0   0:00.01 kworker/6:3H-ra
+22407 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/0:0H
+22408 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/7:0H-ra
+
+top - 15:32:17 up  6:11,  1 user,  load average: 1,76, 1,83, 1,95
+Tasks: 284 total,   2 running, 199 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 16,2 us,  2,8 sy,  0,0 ni, 80,1 id,  0,5 wa,  0,0 hi,  0,5 si,  0,0 st
+KiB Mem :  3960652 total,  1035104 free,  2367460 used,   558088 buff/cache
+KiB Swap:  2098172 total,  1677564 free,   420608 used.  1131376 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+19797 gustavo   20   0 9567684 429020  98560 R  84,1 10,8  13:34.04 chrome
+19457 gustavo   20   0  826468 156832  73920 S  21,9  4,0   5:39.03 chrome
+22126 gustavo   20   0 4845896  91716  56752 S  16,6  2,3   0:27.91 chrome
+ 1301 root      20   0  526468  24468   6384 S  10,3  0,6   9:08.65 Xorg
+ 2011 gustavo   20   0 1551816  53280   7464 S   8,9  1,3   6:35.49 gala
+21291 gustavo   20   0 82,453g 738160  91860 S   4,0 18,6   6:39.84 chrome
+19424 gustavo   20   0 1173308 243740  64280 S   3,6  6,2   2:56.33 chrome
+19463 gustavo   20   0  657824  68996  19160 S   3,0  1,7   0:48.06 chrome
+20858 gustavo   20   0  698704  24068  11028 S   2,3  0,6   0:04.92 io.elementary.t
+ 1951 gustavo    9 -11 1975404   6768   4796 S   2,0  0,2   1:31.22 pulseaudio
+19820 gustavo   20   0 1044080  18720   8204 S   1,0  0,5   0:15.38 chrome
+ 1187 message+  20   0   51696   2796   1064 S   0,7  0,1   0:29.98 dbus-daemon
+20695 gustavo   20   0 9237256 239464  56040 S   0,7  6,0   0:33.06 chrome
+22437 gustavo   20   0   69824   3844   3252 R   0,7  0,1   0:00.05 top
+   54 root      20   0       0      0      0 S   0,3  0,0   0:00.13 ksoftirqd/7
+ 1170 avahi     20   0   48772   2428   1220 S   0,3  0,1   0:17.13 avahi-daemon
+ 1221 root      20   0  306048   2024   1256 S   0,3  0,1   0:25.67 cups-browsed
+ 6842 root       0 -20       0      0      0 I   0,3  0,0   0:01.18 kworker/2:3H-ra
+ 9072 root       0 -20       0      0      0 I   0,3  0,0   0:04.70 kworker/3:2H-ra
+19611 gustavo   20   0 4882064  99788  40540 S   0,3  2,5   0:19.58 chrome
+19631 gustavo   20   0 4829464  56168  28904 S   0,3  1,4   0:02.12 chrome
+22073 root       0 -20       0      0      0 I   0,3  0,0   0:00.06 kworker/0:3H-ra
+22379 root       0 -20       0      0      0 I   0,3  0,0   0:00.02 kworker/6:3H-ra
+    1 root      20   0  225520   3404   1896 S   0,0  0,1   0:02.07 systemd
+    2 root      20   0       0      0      0 S   0,0  0,0   0:00.03 kthreadd
+    3 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 rcu_gp
+    4 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 rcu_par_gp
+    9 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 mm_percpu_wq
+   10 root      20   0       0      0      0 S   0,0  0,0   0:00.20 ksoftirqd/0
+   11 root      20   0       0      0      0 I   0,0  0,0   0:18.75 rcu_sched
+   12 root      rt   0       0      0      0 S   0,0  0,0   0:00.10 migration/0
+   13 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/0
+   14 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/0
+   15 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/1
+   16 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/1
+   17 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/1
+   18 root      20   0       0      0      0 S   0,0  0,0   0:00.16 ksoftirqd/1
+   21 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/2
+   22 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/2
+   23 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/2
+   24 root      20   0       0      0      0 S   0,0  0,0   0:00.07 ksoftirqd/2
+   27 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/3
+   28 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/3
+   29 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/3
+   30 root      20   0       0      0      0 S   0,0  0,0   0:00.04 ksoftirqd/3
+   32 root       0 -20       0      0      0 I   0,0  0,0   0:05.55 kworker/3:0H-ra
+   33 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/4
+   34 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/4
+   35 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/4
+   36 root      20   0       0      0      0 S   0,0  0,0   0:00.06 ksoftirqd/4
+   39 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/5
+   40 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/5
+   41 root      rt   0       0      0      0 S   0,0  0,0   0:00.10 migration/5
+   42 root      20   0       0      0      0 S   0,0  0,0   0:00.02 ksoftirqd/5
+   45 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/6
+   46 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/6
+   47 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/6
+   48 root      20   0       0      0      0 S   0,0  0,0   0:00.04 ksoftirqd/6
+   50 root       0 -20       0      0      0 I   0,0  0,0   0:01.48 kworker/6:0H-ra
+   51 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/7
+   52 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/7
+   53 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/7
+   57 root      20   0       0      0      0 S   0,0  0,0   0:00.00 kdevtmpfs
+   58 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 netns
+   59 root      20   0       0      0      0 S   0,0  0,0   0:00.00 rcu_tasks_kthre
+   60 root      20   0       0      0      0 S   0,0  0,0   0:00.01 kauditd
+   63 root      20   0       0      0      0 S   0,0  0,0   0:00.02 khungtaskd
+   64 root      20   0       0      0      0 S   0,0  0,0   0:00.00 oom_reaper
+   65 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 writeback
+   66 root      20   0       0      0      0 S   0,0  0,0   0:00.91 kcompactd0
+   67 root      25   5       0      0      0 S   0,0  0,0   0:00.00 ksmd
+   68 root      39  19       0      0      0 S   0,0  0,0   0:00.00 khugepaged
+  161 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kintegrityd
+  162 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kblockd
+  163 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 blkcg_punt_bio
+  168 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 tpm_dev_wq
+  169 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ata_sff
+  170 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 md
+  171 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 edac-poller
+  172 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 devfreq_wq
+  174 root      rt   0       0      0      0 S   0,0  0,0   0:00.00 watchdogd
+  177 root      20   0       0      0      0 S   0,0  0,0   0:08.41 kswapd0
+  178 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/u17:0
+  179 root      20   0       0      0      0 S   0,0  0,0   0:00.00 ecryptfs-kthrea
+  182 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kthrotld
+  183 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 irq/27-pciehp
+  184 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 acpi_thermal_pm
+  186 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ipv6_addrconf
+  197 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kstrp
+  217 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 charger_manager
+  277 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 firewire
+  279 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 firewire_ohci
+  280 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 sdhci
+  281 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 irq/18-mmc0
+  283 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ttm_swap
+  284 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_0
+  285 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_0
+  286 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_1
+  287 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_1
+  288 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_2
+  289 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_2
+  290 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_3
+  291 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_3
+  292 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_4
+  293 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_4
+  294 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_5
+  295 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_5
+  300 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 e1000e
+  531 root      20   0       0      0      0 S   0,0  0,0   0:00.17 jbd2/sda4-8
+  532 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ext4-rsv-conver
+  570 root       0 -20       0      0      0 I   0,0  0,0   0:00.97 kworker/5:1H-ra
+  574 root      19  -1   95112   2652   2192 S   0,0  0,1   0:00.90 systemd-journal
+  605 root      20   0   97704      0      0 S   0,0  0,0   0:00.00 lvmetad
+  608 root      20   0   47912    552    148 S   0,0  0,0   0:00.97 systemd-udevd
+  654 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 cfg80211
+  657 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 irq/34-mei_me
+  785 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 irq/35-iwlwifi
+  835 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 cryptd
+  954 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop0
+  958 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop1
+  960 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop2
+  962 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop3
+  967 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop4
+  973 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop5
+  974 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop6
+  975 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop7
+  976 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop8
+  977 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop9
+  978 root       0 -20       0      0      0 S   0,0  0,0   0:00.04 loop10
+  979 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop11
+  980 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop12
+  981 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop13
+  982 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop14
+ 1051 root      20   0   40620    672    180 S   0,0  0,0   0:21.35 mount.ntfs
+ 1056 root      20   0       0      0      0 S   0,0  0,0   0:03.48 jbd2/sda6-8
+ 1057 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ext4-rsv-conver
+ 1165 systemd+  20   0  143992     28      0 S   0,0  0,0   0:00.06 systemd-timesyn
+ 1166 systemd+  20   0   71156   1272    668 S   0,0  0,0   0:01.86 systemd-resolve
+ 1171 root      20   0   56936    100      0 S   0,0  0,0   0:00.03 cron
+ 1173 root      20   0  127544   1188    328 S   0,0  0,0   0:03.37 cupsd
+ 1175 root      20   0  434324      0      0 S   0,0  0,0   0:00.06 ModemManager
+ 1176 root      20   0  196100    320    320 S   0,0  0,0   0:00.06 networkd-dispat
+ 1177 root      20   0   70776    632    272 S   0,0  0,0   0:00.66 systemd-logind
+ 1178 root      20   0    4548      0      0 S   0,0  0,0   0:00.74 acpid
+ 1182 root      20   0  110484    376    260 S   0,0  0,0   0:01.60 irqbalance
+ 1185 syslog    20   0  263032      0      0 S   0,0  0,0   0:00.19 rsyslogd
+ 1191 root      20   0  525288   1688      0 S   0,0  0,0   0:01.33 NetworkManager
+ 1192 root      20   0   45228     64      0 S   0,0  0,0   0:00.13 wpa_supplicant
+ 1193 root      20   0  310564    772    220 S   0,0  0,0   0:00.14 pantheon-parent
+ 1195 root      20   0  327084    120      0 S   0,0  0,0   0:00.59 accounts-daemon
+ 1196 root      20   0  205508    272      0 S   0,0  0,0   0:01.82 thermald
+ 1197 root      20   0  518140   1748    292 S   0,0  0,0   0:02.27 udisksd
+ 1199 root      20   0 1523216   4584      0 S   0,0  0,1   0:04.28 snapd
+ 1220 avahi     20   0   47072     40      0 S   0,0  0,0   0:00.00 avahi-daemon
+ 1231 root      20   0  339940   3236   1108 S   0,0  0,1   0:03.45 polkitd
+ 1252 colord    20   0  358244   2608    940 S   0,0  0,1   0:00.35 colord
+ 1267 lp        20   0   86416     24     24 S   0,0  0,0   0:00.00 dbus
+ 1287 root      20   0  308904    692    316 S   0,0  0,0   0:00.07 lightdm
+ 1310 root      20   0 1299220  10652      0 S   0,0  0,3   0:14.30 core
+ 1318 root      20   0   41796      0      0 S   0,0  0,0   0:00.00 agetty
+ 1419 kernoops  20   0   56940    104      0 S   0,0  0,0   0:00.86 kerneloops
+ 1422 kernoops  20   0   56940     96      0 S   0,0  0,0   0:00.86 kerneloops
+ 1433 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 iprt-VBoxWQueue
+ 1438 root      20   0       0      0      0 S   0,0  0,0   0:00.00 iprt-VBoxTscThr
+ 1591 root      20   0  340968    972      0 S   0,0  0,0   0:01.05 upowerd
+ 1650 root      20   0  250548    308    308 S   0,0  0,0   0:00.01 lightdm
+ 1659 rtkit     21   1  183504     84      0 S   0,0  0,0   0:00.38 rtkit-daemon
+ 1679 root       0 -20       0      0      0 I   0,0  0,0   0:00.93 kworker/7:2H-ra
+ 1682 gustavo   20   0   77148   1364    648 S   0,0  0,0   0:00.16 systemd
+ 1683 gustavo   20   0  261592    444      0 S   0,0  0,0   0:00.00 (sd-pam)
+ 1702 gustavo   20   0  307004    780      0 S   0,0  0,0   0:00.26 gnome-keyring-d
+ 1705 gustavo   20   0  596712   1220      0 S   0,0  0,0   0:00.52 gnome-session-b
+ 1714 gustavo   20   0   51184   1908    468 S   0,0  0,0   0:01.90 dbus-daemon
+ 1716 gustavo   20   0  310572    564      0 S   0,0  0,0   0:00.13 gvfsd
+ 1721 gustavo   20   0  432020    312     28 S   0,0  0,0   0:00.01 gvfsd-fuse
+ 1825 gustavo   20   0   11300     40      0 S   0,0  0,0   0:00.10 ssh-agent
+ 1839 gustavo   20   0  367980    332    332 S   0,0  0,0   0:00.01 at-spi-bus-laun
+ 1844 gustavo   20   0   50832   1672    540 S   0,0  0,0   0:06.65 dbus-daemon
+ 1846 gustavo   20   0  220708   1560   1152 S   0,0  0,0   0:03.96 at-spi2-registr
+ 1857 gustavo   20   0  552132   1676      0 S   0,0  0,0   0:00.25 gsd-xsettings
+ 1858 gustavo   20   0  441724    480      0 S   0,0  0,0   0:00.09 gsd-rfkill
+ 1862 gustavo   20   0  315144    420      0 S   0,0  0,0   0:00.07 gsd-a11y-settin
+ 1864 gustavo   20   0  403216   2536      0 S   0,0  0,1   0:00.22 gsd-clipboard
+ 1867 gustavo   20   0  487924   2632      0 S   0,0  0,1   0:00.24 gsd-wacom
+ 1870 gustavo   20   0  566100   3416   1468 S   0,0  0,1   0:00.56 gsd-power
+ 1871 gustavo   20   0  361600    420      0 S   0,0  0,0   0:00.07 gsd-sound
+ 1872 gustavo   20   0  734652   4188   1808 S   0,0  0,1   0:03.00 gsd-color
+ 1878 gustavo   20   0 1007728   1688    600 S   0,0  0,0   0:01.78 gsd-housekeepin
+ 1885 gustavo   20   0  989316   4624   1604 S   0,0  0,1   0:00.44 gsd-media-keys
+ 1887 gustavo   20   0  367856    592      0 S   0,0  0,0   0:00.09 gsd-print-notif
+ 1892 gustavo   20   0  555384   2764     84 S   0,0  0,1   0:00.24 gsd-keyboard
+ 1907 gustavo   20   0  500164    672     76 S   0,0  0,0   0:00.23 gsd-datetime
+ 1908 gustavo   20   0  489828    708      0 S   0,0  0,0   0:00.11 gsd-sharing
+ 1918 gustavo   20   0  315152    404      0 S   0,0  0,0   0:00.08 gsd-mouse
+ 1923 gustavo   20   0  411220    384      0 S   0,0  0,0   0:00.08 gsd-smartcard
+ 1985 gustavo   20   0 1223968   3804      0 S   0,0  0,1   1:07.01 core
+ 2004 gustavo   20   0  527280    440      0 S   0,0  0,0   0:00.02 gsd-printer
+ 2020 gustavo   20   0   62644   3944    732 S   0,0  0,1   0:04.92 wsatspi
+ 2038 gustavo   20   0  188036   1040    380 S   0,0  0,0   0:00.62 dconf-service
+ 2041 gustavo   20   0  285376    392      0 S   0,0  0,0   0:00.08 io.elementary.c
+ 2045 gustavo   20   0  621996    892      0 S   0,0  0,0   0:00.11 gala-daemon
+ 2047 gustavo   20   0 3655976  36332   8296 S   0,0  0,9   0:06.91 wingpanel
+ 2048 gustavo   20   0  704428  13868   7280 S   0,0  0,4   0:07.42 plank
+ 2062 gustavo   20   0  548512    824      0 S   0,0  0,0   0:00.12 pantheon-agent-
+ 2063 gustavo   20   0  524036   2012    416 S   0,0  0,1   0:00.26 io.elementary.d
+ 2066 gustavo   20   0  721012   2284   1008 S   0,0  0,1   0:00.24 nm-applet
+ 2071 gustavo   20   0  480840   2692   1048 S   0,0  0,1   0:00.67 light-locker
+ 2073 gustavo   20   0  960576     24     24 S   0,0  0,0   0:00.15 io.elementary.c
+ 2075 gustavo   20   0  407628    832      0 S   0,0  0,0   0:00.12 pantheon-parent
+ 2106 gustavo   20   0  498628   8020   3256 S   0,0  0,2   0:03.51 bamfdaemon
+ 2294 gustavo   20   0 1392880    348    348 S   0,0  0,0   0:00.10 evolution-sourc
+ 2328 gustavo   20   0  912832    348    348 S   0,0  0,0   0:00.30 evolution-calen
+ 2335 gustavo   20   0 1087428    104    104 S   0,0  0,0   0:00.28 evolution-calen
+ 2344 gustavo   20   0  753352    296    296 S   0,0  0,0   0:00.05 evolution-addre
+ 2355 gustavo   20   0 1042472      0      0 S   0,0  0,0   0:00.07 evolution-addre
+ 2439 root       0 -20       0      0      0 I   0,0  0,0   0:01.00 kworker/5:2H-kb
+ 3334 gustavo   20   0 1349412   3660   1316 S   0,0  0,1   0:03.40 io.elementary.a
+ 5356 gustavo   20   0  402648    936      0 S   0,0  0,0   0:00.13 gvfsd-trash
+ 6548 root       0 -20       0      0      0 I   0,0  0,0   0:00.82 kworker/7:1H-ra
+ 8245 gustavo   20   0  495200   1760    976 S   0,0  0,0   0:00.23 io.elementary.f
+ 8251 gustavo   20   0  338700   1848    368 S   0,0  0,0   0:00.58 gvfs-udisks2-vo
+ 8255 gustavo   20   0  292552    304      0 S   0,0  0,0   0:00.02 gvfs-goa-volume
+ 8259 gustavo   20   0  397332    424      0 S   0,0  0,0   0:00.03 gvfs-afc-volume
+ 8264 gustavo   20   0  307308    460      0 S   0,0  0,0   0:00.04 gvfs-gphoto2-vo
+ 8272 gustavo   20   0  312940   1812   1124 S   0,0  0,0   0:00.06 gvfs-mtp-volume
+ 8300 gustavo   20   0  464368   1608    440 S   0,0  0,0   0:00.36 zeitgeist-daemo
+ 8311 gustavo   20   0  331056   1868     96 S   0,0  0,0   0:00.40 zeitgeist-fts
+ 8314 gustavo   20   0  223148   1212    600 S   0,0  0,0   0:00.18 gvfsd-metadata
+ 9492 gustavo   20   0  476564    968     88 S   0,0  0,0   0:00.06 gvfsd-network
+ 9557 gustavo   20   0  399804    388      0 S   0,0  0,0   0:00.55 gvfsd-dnssd
+12653 root       0 -20       0      0      0 I   0,0  0,0   0:00.92 kworker/4:1H-ra
+12732 root       0 -20       0      0      0 I   0,0  0,0   0:00.97 kworker/4:3H-ra
+14804 root      20   0       0      0      0 I   0,0  0,0   0:00.09 kworker/6:1-eve
+15718 root       0 -20       0      0      0 I   0,0  0,0   0:00.95 kworker/1:2H-ra
+15722 root      20   0       0      0      0 I   0,0  0,0   0:00.02 kworker/1:6-eve
+16661 root      20   0       0      0      0 I   0,0  0,0   0:00.10 kworker/5:2-eve
+17360 root      20   0       0      0      0 I   0,0  0,0   0:00.00 kworker/3:1-eve
+18652 gustavo   20   0 1937244  23372   9424 S   0,0  0,6   0:13.83 io.elementary.f
+18898 root       0 -20       0      0      0 I   0,0  0,0   0:00.45 kworker/2:0H-ra
+18995 root       0 -20       0      0      0 I   0,0  0,0   0:00.46 kworker/6:2H-kb
+19431 gustavo   20   0   33224     64      0 S   0,0  0,0   0:00.00 cat
+19432 gustavo   20   0   33224     64      0 S   0,0  0,0   0:00.00 cat
+19435 gustavo   20   0  473568  15460   4440 S   0,0  0,4   0:00.16 chrome
+19436 gustavo   20   0   27220   1000    436 S   0,0  0,0   0:00.00 nacl_helper
+19439 gustavo   20   0  473568  13616   2588 S   0,0  0,3   0:00.14 chrome
+19526 gustavo   20   0 4875100 105728  45304 S   0,0  2,7   0:06.88 chrome
+19594 gustavo   20   0 4818192  38992  21732 S   0,0  1,0   0:00.27 chrome
+19612 gustavo   20   0 4823528  54524  30080 S   0,0  1,4   0:01.55 chrome
+19623 gustavo   20   0 4858300  89772  33908 S   0,0  2,3   0:06.27 chrome
+19743 gustavo   20   0 4869100  75044  26744 S   0,0  1,9   0:06.11 chrome
+20338 root      20   0       0      0      0 I   0,0  0,0   0:00.13 kworker/0:0-mm_
+20413 root      20   0       0      0      0 I   0,0  0,0   0:00.02 kworker/2:0-eve
+20534 root      20   0       0      0      0 I   0,0  0,0   0:00.07 kworker/1:0-mm_
+20682 gustavo   20   0 4819532  36216  18772 S   0,0  0,9   0:00.22 chrome
+20720 root      20   0       0      0      0 I   0,0  0,0   0:00.05 kworker/7:0-eve
+20866 gustavo   20   0   48272   3416   1760 S   0,0  0,1   0:00.07 bash
+20878 gustavo   20   0   48284   2056    428 S   0,0  0,1   0:00.01 bash
+20919 gustavo   20   0 1214504  20896   2044 S   0,0  0,5   0:07.21 remmina
+21024 root      20   0       0      0      0 I   0,0  0,0   0:00.00 kworker/0:2
+21204 root       0 -20       0      0      0 I   0,0  0,0   0:00.22 kworker/1:1H-ra
+21232 root      20   0       0      0      0 I   0,0  0,0   0:00.32 kworker/u16:2-e
+21411 root      20   0       0      0      0 I   0,0  0,0   0:00.05 kworker/6:0-mm_
+21510 root      20   0       0      0      0 I   0,0  0,0   0:00.13 kworker/u16:3-e
+21653 gustavo   20   0 9185884 197820  72780 S   0,0  5,0   0:58.85 chrome
+21689 root      20   0       0      0      0 I   0,0  0,0   0:00.03 kworker/7:3-mm_
+21697 root      20   0       0      0      0 I   0,0  0,0   0:00.03 kworker/2:1-eve
+21770 root      20   0       0      0      0 I   0,0  0,0   0:02.28 kworker/4:1-mm_
+21870 root      20   0       0      0      0 I   0,0  0,0   0:00.06 kworker/u16:1-e
+21962 root      20   0       0      0      0 I   0,0  0,0   0:00.01 kworker/5:1-mm_
+21985 root       0 -20       0      0      0 I   0,0  0,0   0:00.05 kworker/0:2H-ra
+22024 root      20   0       0      0      0 I   0,0  0,0   0:00.01 kworker/3:2-mm_
+22026 root      20   0       0      0      0 I   0,0  0,0   0:00.00 kworker/3:3-eve
+22057 root       0 -20       0      0      0 I   0,0  0,0   0:00.01 kworker/6:1H-ra
+22071 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/3:3H-kb
+22110 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/1:3H-kb
+22119 root      20   0       0      0      0 I   0,0  0,0   0:00.00 kworker/4:2
+22124 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/5:0H
+22125 gustavo   20   0 4803344  45844  31140 S   0,0  1,2   0:00.04 chrome
+22215 root      20   0       0      0      0 I   0,0  0,0   0:00.01 kworker/2:2-mm_
+22277 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/4:0H
+22346 root      20   0       0      0      0 I   0,0  0,0   0:00.01 kworker/u16:0-e
+22376 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/2:1H
+22407 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/0:0H
+22408 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/7:0H-ra
+
+top - 15:32:20 up  6:11,  1 user,  load average: 1,70, 1,81, 1,94
+Tasks: 284 total,   2 running, 199 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 19,5 us,  2,6 sy,  0,0 ni, 73,4 id,  4,1 wa,  0,0 hi,  0,4 si,  0,0 st
+KiB Mem :  3960652 total,  1064352 free,  2326796 used,   569504 buff/cache
+KiB Swap:  2098172 total,  1677564 free,   420608 used.  1167832 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+19797 gustavo   20   0 9567684 429148  98560 S  83,8 10,8  13:36.57 chrome
+21291 gustavo   20   0 82,439g 710832  92032 S  31,1 17,9   6:40.78 chrome
+19457 gustavo   20   0  830340 157608  74696 R  22,2  4,0   5:39.70 chrome
+22126 gustavo   20   0 4845896  91748  56752 S  15,9  2,3   0:28.39 chrome
+ 1301 root      20   0  526468  24468   6384 S   6,3  0,6   9:08.84 Xorg
+ 2011 gustavo   20   0 1551816  53280   7464 S   5,6  1,3   6:35.66 gala
+19424 gustavo   20   0 1177164 240504  65128 S   5,0  6,1   2:56.48 chrome
+ 1951 gustavo    9 -11 1975404   6768   4796 S   2,3  0,2   1:31.29 pulseaudio
+19463 gustavo   20   0  658336  67380  19592 S   2,3  1,7   0:48.13 chrome
+19611 gustavo   20   0 4882064  94804  40540 S   1,0  2,4   0:19.61 chrome
+21770 root      20   0       0      0      0 I   1,0  0,0   0:02.31 kworker/4:1-mm_
+ 1310 root      20   0 1299220  10656      0 S   0,7  0,3   0:14.32 core
+ 1985 gustavo   20   0 1223968   3824      0 S   0,7  0,1   1:07.03 core
+19820 gustavo   20   0 1044080  18720   8204 S   0,7  0,5   0:15.40 chrome
+   11 root      20   0       0      0      0 I   0,3  0,0   0:18.76 rcu_sched
+ 1187 message+  20   0   51696   2796   1064 S   0,3  0,1   0:29.99 dbus-daemon
+19526 gustavo   20   0 4875100 105728  45304 S   0,3  2,7   0:06.89 chrome
+19623 gustavo   20   0 4858300  89920  33912 S   0,3  2,3   0:06.28 chrome
+20695 gustavo   20   0 9237768 239464  56040 S   0,3  6,0   0:33.07 chrome
+21204 root       0 -20       0      0      0 I   0,3  0,0   0:00.23 kworker/1:1H-ra
+22437 gustavo   20   0   69824   3844   3252 R   0,3  0,1   0:00.06 top
+    1 root      20   0  225520   3404   1896 S   0,0  0,1   0:02.07 systemd
+    2 root      20   0       0      0      0 S   0,0  0,0   0:00.03 kthreadd
+    3 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 rcu_gp
+    4 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 rcu_par_gp
+    9 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 mm_percpu_wq
+   10 root      20   0       0      0      0 S   0,0  0,0   0:00.20 ksoftirqd/0
+   12 root      rt   0       0      0      0 S   0,0  0,0   0:00.10 migration/0
+   13 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/0
+   14 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/0
+   15 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/1
+   16 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/1
+   17 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/1
+   18 root      20   0       0      0      0 S   0,0  0,0   0:00.16 ksoftirqd/1
+   21 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/2
+   22 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/2
+   23 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/2
+   24 root      20   0       0      0      0 S   0,0  0,0   0:00.07 ksoftirqd/2
+   27 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/3
+   28 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/3
+   29 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/3
+   30 root      20   0       0      0      0 S   0,0  0,0   0:00.04 ksoftirqd/3
+   32 root       0 -20       0      0      0 I   0,0  0,0   0:05.55 kworker/3:0H-ra
+   33 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/4
+   34 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/4
+   35 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/4
+   36 root      20   0       0      0      0 S   0,0  0,0   0:00.06 ksoftirqd/4
+   39 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/5
+   40 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/5
+   41 root      rt   0       0      0      0 S   0,0  0,0   0:00.10 migration/5
+   42 root      20   0       0      0      0 S   0,0  0,0   0:00.02 ksoftirqd/5
+   45 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/6
+   46 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/6
+   47 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/6
+   48 root      20   0       0      0      0 S   0,0  0,0   0:00.04 ksoftirqd/6
+   50 root       0 -20       0      0      0 I   0,0  0,0   0:01.48 kworker/6:0H-ra
+   51 root      20   0       0      0      0 S   0,0  0,0   0:00.00 cpuhp/7
+   52 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 idle_inject/7
+   53 root      rt   0       0      0      0 S   0,0  0,0   0:00.09 migration/7
+   54 root      20   0       0      0      0 S   0,0  0,0   0:00.13 ksoftirqd/7
+   57 root      20   0       0      0      0 S   0,0  0,0   0:00.00 kdevtmpfs
+   58 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 netns
+   59 root      20   0       0      0      0 S   0,0  0,0   0:00.00 rcu_tasks_kthre
+   60 root      20   0       0      0      0 S   0,0  0,0   0:00.01 kauditd
+   63 root      20   0       0      0      0 S   0,0  0,0   0:00.02 khungtaskd
+   64 root      20   0       0      0      0 S   0,0  0,0   0:00.00 oom_reaper
+   65 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 writeback
+   66 root      20   0       0      0      0 S   0,0  0,0   0:00.91 kcompactd0
+   67 root      25   5       0      0      0 S   0,0  0,0   0:00.00 ksmd
+   68 root      39  19       0      0      0 S   0,0  0,0   0:00.00 khugepaged
+  161 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kintegrityd
+  162 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kblockd
+  163 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 blkcg_punt_bio
+  168 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 tpm_dev_wq
+  169 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ata_sff
+  170 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 md
+  171 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 edac-poller
+  172 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 devfreq_wq
+  174 root      rt   0       0      0      0 S   0,0  0,0   0:00.00 watchdogd
+  177 root      20   0       0      0      0 S   0,0  0,0   0:08.41 kswapd0
+  178 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/u17:0
+  179 root      20   0       0      0      0 S   0,0  0,0   0:00.00 ecryptfs-kthrea
+  182 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kthrotld
+  183 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 irq/27-pciehp
+  184 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 acpi_thermal_pm
+  186 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ipv6_addrconf
+  197 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kstrp
+  217 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 charger_manager
+  277 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 firewire
+  279 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 firewire_ohci
+  280 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 sdhci
+  281 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 irq/18-mmc0
+  283 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ttm_swap
+  284 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_0
+  285 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_0
+  286 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_1
+  287 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_1
+  288 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_2
+  289 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_2
+  290 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_3
+  291 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_3
+  292 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_4
+  293 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_4
+  294 root      20   0       0      0      0 S   0,0  0,0   0:00.00 scsi_eh_5
+  295 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 scsi_tmf_5
+  300 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 e1000e
+  531 root      20   0       0      0      0 S   0,0  0,0   0:00.17 jbd2/sda4-8
+  532 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ext4-rsv-conver
+  570 root       0 -20       0      0      0 I   0,0  0,0   0:00.97 kworker/5:1H-ra
+  574 root      19  -1   95112   2652   2192 S   0,0  0,1   0:00.90 systemd-journal
+  605 root      20   0   97704      0      0 S   0,0  0,0   0:00.00 lvmetad
+  608 root      20   0   47912    552    148 S   0,0  0,0   0:00.97 systemd-udevd
+  654 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 cfg80211
+  657 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 irq/34-mei_me
+  785 root     -51   0       0      0      0 S   0,0  0,0   0:00.00 irq/35-iwlwifi
+  835 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 cryptd
+  954 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop0
+  958 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop1
+  960 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop2
+  962 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop3
+  967 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop4
+  973 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop5
+  974 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop6
+  975 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop7
+  976 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop8
+  977 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop9
+  978 root       0 -20       0      0      0 S   0,0  0,0   0:00.04 loop10
+  979 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop11
+  980 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop12
+  981 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop13
+  982 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 loop14
+ 1051 root      20   0   40620    672    180 S   0,0  0,0   0:21.35 mount.ntfs
+ 1056 root      20   0       0      0      0 S   0,0  0,0   0:03.48 jbd2/sda6-8
+ 1057 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 ext4-rsv-conver
+ 1165 systemd+  20   0  143992     28      0 S   0,0  0,0   0:00.06 systemd-timesyn
+ 1166 systemd+  20   0   71156   1272    668 S   0,0  0,0   0:01.86 systemd-resolve
+ 1170 avahi     20   0   48772   2428   1220 S   0,0  0,1   0:17.13 avahi-daemon
+ 1171 root      20   0   56936    100      0 S   0,0  0,0   0:00.03 cron
+ 1173 root      20   0  127544   1188    328 S   0,0  0,0   0:03.37 cupsd
+ 1175 root      20   0  434324      0      0 S   0,0  0,0   0:00.06 ModemManager
+ 1176 root      20   0  196100    320    320 S   0,0  0,0   0:00.06 networkd-dispat
+ 1177 root      20   0   70776    632    272 S   0,0  0,0   0:00.66 systemd-logind
+ 1178 root      20   0    4548      0      0 S   0,0  0,0   0:00.74 acpid
+ 1182 root      20   0  110484    376    260 S   0,0  0,0   0:01.60 irqbalance
+ 1185 syslog    20   0  263032      0      0 S   0,0  0,0   0:00.19 rsyslogd
+ 1191 root      20   0  525288   1688      0 S   0,0  0,0   0:01.33 NetworkManager
+ 1192 root      20   0   45228     64      0 S   0,0  0,0   0:00.13 wpa_supplicant
+ 1193 root      20   0  310564    772    220 S   0,0  0,0   0:00.14 pantheon-parent
+ 1195 root      20   0  327084    120      0 S   0,0  0,0   0:00.59 accounts-daemon
+ 1196 root      20   0  205508    272      0 S   0,0  0,0   0:01.82 thermald
+ 1197 root      20   0  518140   1748    292 S   0,0  0,0   0:02.27 udisksd
+ 1199 root      20   0 1523216   4584      0 S   0,0  0,1   0:04.28 snapd
+ 1220 avahi     20   0   47072     40      0 S   0,0  0,0   0:00.00 avahi-daemon
+ 1221 root      20   0  306048   2024   1256 S   0,0  0,1   0:25.67 cups-browsed
+ 1231 root      20   0  339940   3236   1108 S   0,0  0,1   0:03.45 polkitd
+ 1252 colord    20   0  358244   2608    940 S   0,0  0,1   0:00.35 colord
+ 1267 lp        20   0   86416     24     24 S   0,0  0,0   0:00.00 dbus
+ 1287 root      20   0  308904    692    316 S   0,0  0,0   0:00.07 lightdm
+ 1318 root      20   0   41796      0      0 S   0,0  0,0   0:00.00 agetty
+ 1419 kernoops  20   0   56940    104      0 S   0,0  0,0   0:00.86 kerneloops
+ 1422 kernoops  20   0   56940     96      0 S   0,0  0,0   0:00.86 kerneloops
+ 1433 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 iprt-VBoxWQueue
+ 1438 root      20   0       0      0      0 S   0,0  0,0   0:00.00 iprt-VBoxTscThr
+ 1591 root      20   0  340968    972      0 S   0,0  0,0   0:01.05 upowerd
+ 1650 root      20   0  250548    308    308 S   0,0  0,0   0:00.01 lightdm
+ 1659 rtkit     21   1  183504     84      0 S   0,0  0,0   0:00.38 rtkit-daemon
+ 1679 root       0 -20       0      0      0 I   0,0  0,0   0:00.93 kworker/7:2H-ra
+ 1682 gustavo   20   0   77148   1364    648 S   0,0  0,0   0:00.16 systemd
+ 1683 gustavo   20   0  261592    444      0 S   0,0  0,0   0:00.00 (sd-pam)
+ 1702 gustavo   20   0  307004    780      0 S   0,0  0,0   0:00.26 gnome-keyring-d
+ 1705 gustavo   20   0  596712   1220      0 S   0,0  0,0   0:00.52 gnome-session-b
+ 1714 gustavo   20   0   51184   1908    468 S   0,0  0,0   0:01.90 dbus-daemon
+ 1716 gustavo   20   0  310572    564      0 S   0,0  0,0   0:00.13 gvfsd
+ 1721 gustavo   20   0  432020    312     28 S   0,0  0,0   0:00.01 gvfsd-fuse
+ 1825 gustavo   20   0   11300     40      0 S   0,0  0,0   0:00.10 ssh-agent
+ 1839 gustavo   20   0  367980    332    332 S   0,0  0,0   0:00.01 at-spi-bus-laun
+ 1844 gustavo   20   0   50832   1672    540 S   0,0  0,0   0:06.65 dbus-daemon
+ 1846 gustavo   20   0  220708   1560   1152 S   0,0  0,0   0:03.96 at-spi2-registr
+ 1857 gustavo   20   0  552132   1676      0 S   0,0  0,0   0:00.25 gsd-xsettings
+ 1858 gustavo   20   0  441724    480      0 S   0,0  0,0   0:00.09 gsd-rfkill
+ 1862 gustavo   20   0  315144    420      0 S   0,0  0,0   0:00.07 gsd-a11y-settin
+ 1864 gustavo   20   0  403216   2536      0 S   0,0  0,1   0:00.22 gsd-clipboard
+ 1867 gustavo   20   0  487924   2632      0 S   0,0  0,1   0:00.24 gsd-wacom
+ 1870 gustavo   20   0  566100   3416   1468 S   0,0  0,1   0:00.56 gsd-power
+ 1871 gustavo   20   0  361600    420      0 S   0,0  0,0   0:00.07 gsd-sound
+ 1872 gustavo   20   0  734652   4188   1808 S   0,0  0,1   0:03.00 gsd-color
+ 1878 gustavo   20   0 1007728   1688    600 S   0,0  0,0   0:01.78 gsd-housekeepin
+ 1885 gustavo   20   0  989316   4624   1604 S   0,0  0,1   0:00.44 gsd-media-keys
+ 1887 gustavo   20   0  367856    592      0 S   0,0  0,0   0:00.09 gsd-print-notif
+ 1892 gustavo   20   0  555384   2764     84 S   0,0  0,1   0:00.24 gsd-keyboard
+ 1907 gustavo   20   0  500164    672     76 S   0,0  0,0   0:00.23 gsd-datetime
+ 1908 gustavo   20   0  489828    708      0 S   0,0  0,0   0:00.11 gsd-sharing
+ 1918 gustavo   20   0  315152    404      0 S   0,0  0,0   0:00.08 gsd-mouse
+ 1923 gustavo   20   0  411220    384      0 S   0,0  0,0   0:00.08 gsd-smartcard
+ 2004 gustavo   20   0  527280    440      0 S   0,0  0,0   0:00.02 gsd-printer
+ 2020 gustavo   20   0   62644   3944    732 S   0,0  0,1   0:04.92 wsatspi
+ 2038 gustavo   20   0  188036   1040    380 S   0,0  0,0   0:00.62 dconf-service
+ 2041 gustavo   20   0  285376    392      0 S   0,0  0,0   0:00.08 io.elementary.c
+ 2045 gustavo   20   0  621996    892      0 S   0,0  0,0   0:00.11 gala-daemon
+ 2047 gustavo   20   0 3655976  36332   8296 S   0,0  0,9   0:06.91 wingpanel
+ 2048 gustavo   20   0  704428  13868   7280 S   0,0  0,4   0:07.42 plank
+ 2062 gustavo   20   0  548512    824      0 S   0,0  0,0   0:00.12 pantheon-agent-
+ 2063 gustavo   20   0  524036   2012    416 S   0,0  0,1   0:00.26 io.elementary.d
+ 2066 gustavo   20   0  721012   2284   1008 S   0,0  0,1   0:00.24 nm-applet
+ 2071 gustavo   20   0  480840   2692   1048 S   0,0  0,1   0:00.67 light-locker
+ 2073 gustavo   20   0  960576     24     24 S   0,0  0,0   0:00.15 io.elementary.c
+ 2075 gustavo   20   0  407628    832      0 S   0,0  0,0   0:00.12 pantheon-parent
+ 2106 gustavo   20   0  498628   8020   3256 S   0,0  0,2   0:03.51 bamfdaemon
+ 2294 gustavo   20   0 1392880    348    348 S   0,0  0,0   0:00.10 evolution-sourc
+ 2328 gustavo   20   0  912832    348    348 S   0,0  0,0   0:00.30 evolution-calen
+ 2335 gustavo   20   0 1087428    104    104 S   0,0  0,0   0:00.28 evolution-calen
+ 2344 gustavo   20   0  753352    296    296 S   0,0  0,0   0:00.05 evolution-addre
+ 2355 gustavo   20   0 1042472      0      0 S   0,0  0,0   0:00.07 evolution-addre
+ 2439 root       0 -20       0      0      0 I   0,0  0,0   0:01.00 kworker/5:2H-ra
+ 3334 gustavo   20   0 1349412   3660   1316 S   0,0  0,1   0:03.40 io.elementary.a
+ 5356 gustavo   20   0  402648    936      0 S   0,0  0,0   0:00.13 gvfsd-trash
+ 6548 root       0 -20       0      0      0 I   0,0  0,0   0:00.82 kworker/7:1H-ra
+ 6842 root       0 -20       0      0      0 I   0,0  0,0   0:01.18 kworker/2:3H-ra
+ 8245 gustavo   20   0  495200   1760    976 S   0,0  0,0   0:00.23 io.elementary.f
+ 8251 gustavo   20   0  338700   1848    368 S   0,0  0,0   0:00.58 gvfs-udisks2-vo
+ 8255 gustavo   20   0  292552    304      0 S   0,0  0,0   0:00.02 gvfs-goa-volume
+ 8259 gustavo   20   0  397332    424      0 S   0,0  0,0   0:00.03 gvfs-afc-volume
+ 8264 gustavo   20   0  307308    460      0 S   0,0  0,0   0:00.04 gvfs-gphoto2-vo
+ 8272 gustavo   20   0  312940   1812   1124 S   0,0  0,0   0:00.06 gvfs-mtp-volume
+ 8300 gustavo   20   0  464368   1608    440 S   0,0  0,0   0:00.36 zeitgeist-daemo
+ 8311 gustavo   20   0  331056   1868     96 S   0,0  0,0   0:00.40 zeitgeist-fts
+ 8314 gustavo   20   0  223148   1212    600 S   0,0  0,0   0:00.18 gvfsd-metadata
+ 9072 root       0 -20       0      0      0 I   0,0  0,0   0:04.70 kworker/3:2H-ra
+ 9492 gustavo   20   0  476564    968     88 S   0,0  0,0   0:00.06 gvfsd-network
+ 9557 gustavo   20   0  399804    388      0 S   0,0  0,0   0:00.55 gvfsd-dnssd
+12653 root       0 -20       0      0      0 I   0,0  0,0   0:00.92 kworker/4:1H-ra
+12732 root       0 -20       0      0      0 I   0,0  0,0   0:00.97 kworker/4:3H-ra
+14804 root      20   0       0      0      0 I   0,0  0,0   0:00.09 kworker/6:1-eve
+15718 root       0 -20       0      0      0 I   0,0  0,0   0:00.95 kworker/1:2H-ra
+15722 root      20   0       0      0      0 I   0,0  0,0   0:00.02 kworker/1:6-eve
+16661 root      20   0       0      0      0 I   0,0  0,0   0:00.10 kworker/5:2-eve
+17360 root      20   0       0      0      0 I   0,0  0,0   0:00.00 kworker/3:1-eve
+18652 gustavo   20   0 1937244  23372   9424 S   0,0  0,6   0:13.83 io.elementary.f
+18898 root       0 -20       0      0      0 I   0,0  0,0   0:00.45 kworker/2:0H-ra
+18995 root       0 -20       0      0      0 I   0,0  0,0   0:00.46 kworker/6:2H-kb
+19431 gustavo   20   0   33224     64      0 S   0,0  0,0   0:00.00 cat
+19432 gustavo   20   0   33224     64      0 S   0,0  0,0   0:00.00 cat
+19435 gustavo   20   0  473568  15460   4440 S   0,0  0,4   0:00.16 chrome
+19436 gustavo   20   0   27220   1000    436 S   0,0  0,0   0:00.00 nacl_helper
+19439 gustavo   20   0  473568  13616   2588 S   0,0  0,3   0:00.14 chrome
+19594 gustavo   20   0 4818192  38992  21732 S   0,0  1,0   0:00.27 chrome
+19612 gustavo   20   0 4823528  54524  30080 S   0,0  1,4   0:01.55 chrome
+19631 gustavo   20   0 4829464  56168  28904 S   0,0  1,4   0:02.12 chrome
+19743 gustavo   20   0 4869100  75044  26744 S   0,0  1,9   0:06.11 chrome
+20338 root      20   0       0      0      0 I   0,0  0,0   0:00.13 kworker/0:0-eve
+20413 root      20   0       0      0      0 I   0,0  0,0   0:00.02 kworker/2:0-eve
+20534 root      20   0       0      0      0 I   0,0  0,0   0:00.07 kworker/1:0-mm_
+20682 gustavo   20   0 4819532  36216  18772 S   0,0  0,9   0:00.22 chrome
+20720 root      20   0       0      0      0 I   0,0  0,0   0:00.05 kworker/7:0-eve
+20858 gustavo   20   0  698704  24068  11028 S   0,0  0,6   0:04.92 io.elementary.t
+20866 gustavo   20   0   48272   3416   1760 S   0,0  0,1   0:00.07 bash
+20878 gustavo   20   0   48284   2056    428 S   0,0  0,1   0:00.01 bash
+20919 gustavo   20   0 1214504  20896   2044 S   0,0  0,5   0:07.21 remmina
+21024 root      20   0       0      0      0 I   0,0  0,0   0:00.00 kworker/0:2
+21232 root      20   0       0      0      0 I   0,0  0,0   0:00.32 kworker/u16:2-e
+21411 root      20   0       0      0      0 I   0,0  0,0   0:00.05 kworker/6:0-mm_
+21510 root      20   0       0      0      0 I   0,0  0,0   0:00.13 kworker/u16:3-e
+21653 gustavo   20   0 9185884 197820  72780 S   0,0  5,0   0:58.85 chrome
+21689 root      20   0       0      0      0 I   0,0  0,0   0:00.03 kworker/7:3-mm_
+21697 root      20   0       0      0      0 I   0,0  0,0   0:00.03 kworker/2:1-eve
+21870 root      20   0       0      0      0 I   0,0  0,0   0:00.06 kworker/u16:1-e
+21962 root      20   0       0      0      0 I   0,0  0,0   0:00.01 kworker/5:1-mm_
+21985 root       0 -20       0      0      0 I   0,0  0,0   0:00.05 kworker/0:2H-ra
+22024 root      20   0       0      0      0 I   0,0  0,0   0:00.01 kworker/3:2-mm_
+22057 root       0 -20       0      0      0 I   0,0  0,0   0:00.01 kworker/6:1H-ra
+22071 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/3:3H-kb
+22073 root       0 -20       0      0      0 I   0,0  0,0   0:00.06 kworker/0:3H-ra
+22110 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/1:3H-kb
+22119 root      20   0       0      0      0 I   0,0  0,0   0:00.00 kworker/4:2
+22124 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/5:0H
+22125 gustavo   20   0 4803344  45844  31140 S   0,0  1,2   0:00.04 chrome
+22215 root      20   0       0      0      0 I   0,0  0,0   0:00.01 kworker/2:2-mm_
+22277 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/4:0H
+22346 root      20   0       0      0      0 I   0,0  0,0   0:00.01 kworker/u16:0-e
+22376 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/2:1H
+22379 root       0 -20       0      0      0 I   0,0  0,0   0:00.02 kworker/6:3H-ra
+22407 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/0:0H
+22408 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/7:0H-ra
+22441 root       0 -20       0      0      0 I   0,0  0,0   0:00.00 kworker/1:0H
