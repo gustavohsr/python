@@ -1,6 +1,6 @@
 def retangulo(largura,altura):
 
-    print("Criando Retangulo")
+    #print("Criando Retangulo")
     x = 1
     while x <= altura:
         y = 1
