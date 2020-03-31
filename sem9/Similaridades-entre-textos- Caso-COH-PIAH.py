@@ -68,8 +68,21 @@ def n_palavras_diferentes(lista_palavras):
     return len(freq)
 
 def compara_assinatura(as_a, as_b):
-    '''IMPLEMENTAR. Essa funcao recebe duas assinaturas de texto e deve devolver o grau de similaridade nas assinaturas.'''
-    pass
+    '''IMPLEMENTAR. Essa funcao recebe duas assinaturas de texto e deve devolver o grau de 
+    similaridade nas assinaturas.'''
+    soma_a = 0
+    soma_b = 0
+
+    for index in range(len(as_a)):
+        soma_a = soma_a + as_a[index]
+        soma_b = soma_b + as_b[index]
+    
+    #diferenca = soma_a - soma_b
+    soma = (soma_a + abs(soma_a - soma_b))//6
+
+    return soma
+
+
 
 def calcula_assinatura(texto):
     '''IMPLEMENTAR. Essa funcao recebe um texto e deve devolver a assinatura do texto.'''
