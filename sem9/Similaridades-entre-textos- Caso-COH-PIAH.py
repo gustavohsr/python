@@ -75,10 +75,10 @@ def calcula_assinatura(texto):
     '''IMPLEMENTAR. Essa funcao recebe um texto e deve devolver a assinatura do texto.'''
     wal = tam_medio_palavra(texto)
     ttr = type_token(texto)
-    #hlr = float(input("Entre a Razão Hapax Legomana:"))
-    #sal = float(input("Entre o tamanho médio de sentença:"))
-    #sac = float(input("Entre a complexidade média da sentença:"))
-    #pal = float(input("Entre o tamanho medio de frase:"))
+    hlr = hapax_legomana(texto)
+    sal = tam_medio_sentenca(texto)
+    sac = complexidade(texto)
+    pal = tam_medio_frase(texto)
 
     return [wal, ttr, hlr, sal, sac, pal]
 
@@ -105,19 +105,70 @@ def type_token(texto):
 
     return num_palavras_diff // len(separa_palavras(texto))
 
+def hapax_legomana(texto):
+    '''Razão Hapax Legomana: Número de palavras utilizadas uma vez dividido pelo número total de palavras.'''
+    num_palavras_unicas = n_palavras_unicas(texto)
+    
+    return num_palavras_unicas // len(separa_palavras(texto))
+
+def tam_medio_sentenca(texto):
+    '''Tamanho médio de sentença é a soma dos números de caracteres em todas as sentenças 
+    dividida pelo número de sentenças (os caracteres que separam uma sentença da outra 
+    não devem ser contabilizados como parte da sentença).'''
+    
+    num_caracteres = len(texto_puro(texto))
+    num_sentencas = len(separa_sentencas(texto))
+
+    return num_caracteres // num_sentencas
+
+def texto_puro(texto):
+    '''Retira todos os caracteres que separam sentenças e frases'''
+    a = separa_sentencas(texto)
+    listToStr = ' '.join(map(str, a)) 
+    b = separa_frases(listToStr)
+    listToStr = ' '.join(map(str, b)) 
+    return listToStr
+
+def complexidade(texto):
+    '''Complexidade de sentença é o número total de frases divido pelo número de sentenças.'''
+    num_frases = len(separa_frases(texto))
+    num_sentencas = len(separa_sentencas(texto))
+    return num_frases // num_sentencas
+
+def tam_medio_frase(texto):
+    '''Tamanho médio de frase é a soma do número de caracteres em cada frase dividida 
+    pelo número de frases no texto (os caracteres que separam uma frase da outra não
+    devem ser contabilizados como parte da frase).'''
+    num_caracteres = len(texto_puro(texto))
+    num_frases = len(separa_frases(texto))
+
+    return num_caracteres // num_frases
 
 texto = "Muito além, nos confins inexplorados da região mais brega da Borda Ocidental desta Galáxia, há um pequeno sol amarelo e esquecido. Girando em torno deste sol, a uma distancia de cerca de 148 milhões de quilômetros, há um planetinha verde-azulado absolutamente insignificante, cujas formas de vida, descendentes de primatas, são tão extraordinariamente primitivas que ainda acham que relógios digitais são uma grande ideia."
-#calcula_assinatura(texto)
+print(calcula_assinatura(texto))
+
+texto2 = "Voltei-me para ela; Capitu tinha os olhos no chão. Ergueu-os logo, devagar, e ficamos a olhar um para o outro... Confissão de crianças, tu valias bem duas ou três páginas, mas quero ser poupado. Em verdade, não falamos nada; o muro falou por nós. Não nos movemos, as mãos é que se estenderam pouco a pouco, todas quatro, pegando-se, apertando-se, fundindo-se. Não marquei a hora exata daquele gesto. Devia tê-la marcado; sinto a falta de uma nota escrita naquela mesma noite, e que eu poria aqui com os erros de ortografia que trouxesse, mas não traria nenhum, tal era a diferença entre o estudante e o adolescente. Conhecia as regras do escrever, sem suspeitar as do amar; tinha orgias de latim e era virgem de mulheres."
+print(calcula_assinatura(texto2))
+
+texto3 = "Voltei-me para ela, mas Capitu tinha os olhos no chão. Ergueu-os logo, devagar, e ficamos a olhar um para o outro... Confissão de crianças, tu valias bem duas ou três páginas, mas quero ser poupado. Em verdade, não falamos nada; o muro falou por nós. Não nos movemos, as mãos é que se estenderam pouco a pouco, todas quatro, pegando-se, apertando-se, fundindo-se. Não marquei a hora exata daquele gesto. Devia tê-la marcado; sinto a falta de uma nota escrita naquela mesma noite, e que eu poria aqui com os erros de ortografia que trouxesse, mas não traria nenhum, tal era a diferença entre o estudante e o adolescente. Conhecia as regras do escrever, sem suspeitar do amar; tinha orgias e era virgem de mulheres."
+print(calcula_assinatura(texto3))
+
 #>[5.571428571428571, 0.8253968253968254, 0.6984126984126984, 210.0, 4.5, 45.888888888888886]
 
-#sentenca = separa_sentencas(texto)
-
 #frases = separa_frases(texto)
+#print(frases)
+#print(len(frases))
 
 #print(separa_palavras(texto))
 #print(conta_caracteres(texto))
-
-print(float(type_token(texto)))
+#print(len(separa_palavras(texto)))
+#print(n_palavras_unicas(texto))
+#a = float(hapax_legomana(texto))
+#print(a)
+#print(float(type_token(texto)))
 #print(n_palavras_diferentes(separa_palavras(texto)))
+#print(len(separa_sentencas(texto)))
+#a = separa_sentencas(texto)
+#print(len(a))
 
 #print(frases)
