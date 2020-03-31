@@ -1,3 +1,9 @@
+'''
+ATIVIDADE FINAL
+
+GUSTAVO HENRIQUE S. RIBEIRO - https://github.com/gustavohsr
+
+'''
 import re
 
 def le_assinatura():
@@ -70,12 +76,11 @@ def n_palavras_diferentes(lista_palavras):
 def compara_assinatura(as_a,as_b):
     '''IMPLEMENTAR. Essa funcao recebe duas assinaturas de texto e deve devolver o grau de 
     similaridade nas assinaturas.'''
-    soma_a = sum(as_a)
-    soma_b = sum(as_b)
+    soma = 0
+    for index in range(0,6):
+        soma = soma + (abs(as_a[index] - as_b[index]))
 
-    soma = (soma_a + abs(soma_a - soma_b))//6
-
-    return soma
+    return soma / 6
 
 def calcula_assinatura(texto):
     '''IMPLEMENTAR. Essa funcao recebe um texto e deve devolver a assinatura do texto.'''
@@ -106,8 +111,10 @@ def conta_caracteres(texto):
     return len(texto)
 
 def tam_medio_palavra(texto):
-    '''Média simples do número de caracteres por palavra.'''
-    num_carac = conta_caracteres(texto)
+    '''Tamanho médio de palavra é a soma dos tamanhos das 
+    palavras dividida pelo número total de palavras.'''
+
+    num_carac = len(texto_puro(texto))
     num_palavras = len(separa_palavras(texto))
 
     return float(num_carac / num_palavras)
@@ -157,21 +164,11 @@ def tam_medio_frase(texto):
 
     return float(num_caracteres / num_frases)
 
-#texto = "Muito além, nos confins inexplorados da região mais brega da Borda Ocidental desta Galáxia, há um pequeno sol amarelo e esquecido. Girando em torno deste sol, a uma distancia de cerca de 148 milhões de quilômetros, há um planetinha verde-azulado absolutamente insignificante, cujas formas de vida, descendentes de primatas, são tão extraordinariamente primitivas que ainda acham que relógios digitais são uma grande ideia."
-#print(calcula_assinatura(texto))
-#a = calcula_assinatura(texto)
-#texto2 = "Voltei-me para ela; Capitu tinha os olhos no chão. Ergueu-os logo, devagar, e ficamos a olhar um para o outro... Confissão de crianças, tu valias bem duas ou três páginas, mas quero ser poupado. Em verdade, não falamos nada; o muro falou por nós. Não nos movemos, as mãos é que se estenderam pouco a pouco, todas quatro, pegando-se, apertando-se, fundindo-se. Não marquei a hora exata daquele gesto. Devia tê-la marcado; sinto a falta de uma nota escrita naquela mesma noite, e que eu poria aqui com os erros de ortografia que trouxesse, mas não traria nenhum, tal era a diferença entre o estudante e o adolescente. Conhecia as regras do escrever, sem suspeitar as do amar; tinha orgias de latim e era virgem de mulheres."
-#print(calcula_assinatura(texto2))
-
-#texto3 = "Voltei-me para ela, mas Capitu tinha os olhos no chão. Ergueu-os logo, devagar, e ficamos a olhar um para o outro... Confissão de crianças, tu valias bem duas ou três páginas, mas quero ser poupado. Em verdade, não falamos nada; o muro falou por nós. Não nos movemos, as mãos é que se estenderam pouco a pouco, todas quatro, pegando-se, apertando-se, fundindo-se. Não marquei a hora exata daquele gesto. Devia tê-la marcado; sinto a falta de uma nota escrita naquela mesma noite, e que eu poria aqui com os erros de ortografia que trouxesse, mas não traria nenhum, tal era a diferença entre o estudante e o adolescente. Conhecia as regras do escrever, sem suspeitar do amar; tinha orgias e era virgem de mulheres."
-#print(calcula_assinatura(texto3))
-
-#texto4 = "O gato caçava o rato"
-#print(calcula_assinatura(texto4))
-
+#========================================###===================
 ass_cp = le_assinatura()
 texts = le_textos()
 
 result = avalia_textos(texts,ass_cp)
 
 print("O autor do texto ", result," está infectado com COH-PIAH")
+#===============================================================
