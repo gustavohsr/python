@@ -67,22 +67,15 @@ def n_palavras_diferentes(lista_palavras):
 
     return len(freq)
 
-def compara_assinatura(as_a, as_b):
+def compara_assinatura(as_a,as_b):
     '''IMPLEMENTAR. Essa funcao recebe duas assinaturas de texto e deve devolver o grau de 
     similaridade nas assinaturas.'''
-    soma_a = 0
-    soma_b = 0
+    soma_a = sum(as_a)
+    soma_b = sum(as_b)
 
-    for index in range(len(as_a)):
-        soma_a = soma_a + as_a[index]
-        soma_b = soma_b + as_b[index]
-    
-    #diferenca = soma_a - soma_b
     soma = (soma_a + abs(soma_a - soma_b))//6
 
     return soma
-
-
 
 def calcula_assinatura(texto):
     '''IMPLEMENTAR. Essa funcao recebe um texto e deve devolver a assinatura do texto.'''
@@ -95,13 +88,11 @@ def calcula_assinatura(texto):
 
     return [wal, ttr, hlr, sal, sac, pal]
 
-    pass
-
 def avalia_textos(textos, ass_cp):
     '''IMPLEMENTAR. Essa funcao recebe uma lista de textos e uma assinatura ass_cp e 
     deve devolver o numero (1 a n) do texto com maior probabilidade de ter
     sido infectado por COH-PIAH.'''
-    menor_grau_similaridade = compara_assinatura(ass_cp,textos[1])
+    menor_grau_similaridade = compara_assinatura(ass_cp,calcula_assinatura(textos[1]))
     text_index = 0
     for index in range(len(textos)):
         calc_ass = calcula_assinatura(textos[index])
@@ -168,7 +159,7 @@ def tam_medio_frase(texto):
 
 #texto = "Muito além, nos confins inexplorados da região mais brega da Borda Ocidental desta Galáxia, há um pequeno sol amarelo e esquecido. Girando em torno deste sol, a uma distancia de cerca de 148 milhões de quilômetros, há um planetinha verde-azulado absolutamente insignificante, cujas formas de vida, descendentes de primatas, são tão extraordinariamente primitivas que ainda acham que relógios digitais são uma grande ideia."
 #print(calcula_assinatura(texto))
-
+#a = calcula_assinatura(texto)
 #texto2 = "Voltei-me para ela; Capitu tinha os olhos no chão. Ergueu-os logo, devagar, e ficamos a olhar um para o outro... Confissão de crianças, tu valias bem duas ou três páginas, mas quero ser poupado. Em verdade, não falamos nada; o muro falou por nós. Não nos movemos, as mãos é que se estenderam pouco a pouco, todas quatro, pegando-se, apertando-se, fundindo-se. Não marquei a hora exata daquele gesto. Devia tê-la marcado; sinto a falta de uma nota escrita naquela mesma noite, e que eu poria aqui com os erros de ortografia que trouxesse, mas não traria nenhum, tal era a diferença entre o estudante e o adolescente. Conhecia as regras do escrever, sem suspeitar as do amar; tinha orgias de latim e era virgem de mulheres."
 #print(calcula_assinatura(texto2))
 
@@ -180,5 +171,7 @@ def tam_medio_frase(texto):
 
 ass_cp = le_assinatura()
 texts = le_textos()
+
 result = avalia_textos(texts,ass_cp)
 
+print("O autor do texto ", result," está infectado com COH-PIAH")
