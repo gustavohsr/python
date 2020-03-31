@@ -85,8 +85,17 @@ def calcula_assinatura(texto):
     pass
 
 def avalia_textos(textos, ass_cp):
-    '''IMPLEMENTAR. Essa funcao recebe uma lista de textos e uma assinatura ass_cp e deve devolver o numero (1 a n) do texto com maior probabilidade de ter sido infectado por COH-PIAH.'''
-    pass
+    '''IMPLEMENTAR. Essa funcao recebe uma lista de textos e uma assinatura ass_cp e 
+    deve devolver o numero (1 a n) do texto com maior probabilidade de ter
+    sido infectado por COH-PIAH.'''
+    menor_grau_similaridade = compara_assinatura(ass_cp,textos[1])
+    text_index = 0
+    for index in range(len(textos)):
+        calc_ass = calcula_assinatura(textos[index])
+        grau_similaridade = compara_assinatura(ass_cp,calc_ass)
+        if grau_similaridade < menor_grau_similaridade:
+            text_index = index
+    return index
 
 def conta_caracteres(texto):
     '''A funcao recebe uma texto e devolve a quantidade de caracteres'''
@@ -158,4 +167,5 @@ def tam_medio_frase(texto):
 
 ass_cp = le_assinatura()
 texts = le_textos()
+result = avalia_textos(texts,ass_cp)
 
